@@ -5,6 +5,8 @@
         <title>ööülikool</title>
         <link rel="stylesheet" href="stylesheets/reset.css">
         <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="frameworks/music-player/plugin/css/style.css">
+        <!--<link rel="stylesheet" href="frameworks/music-player/demo/css/demo.css">-->
          <!-- Bootstrap -->
             <link href="frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet">
             <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,17 +20,29 @@
         <script type="text/javascript" src="javascripts/angular.min.js"></script>
         <script type="text/javascript" src="javascripts/angular-route.js"></script>
         <script type="text/javascript" src="frameworks/music-player/plugin/jquery-jplayer/jquery.jplayer.js"></script>
-        <script type="text/javascript" src="frameworks/music-player/plugin/ttw-music-player-min.js"></script>
+        <script type="text/javascript" src="frameworks/music-player/plugin/ttw-music-player.js"></script>
+        <script type="text/javascript" src="frameworks/music-player/demo/js/myplaylist.js"></script>
         <script type="text/javascript" src="javascripts/script.js"></script>        
         <script type="text/javascript" src="javascripts/db.js"></script>        
+        <!--<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "f1b2a190-28e3-4b82-9d4a-40a0bacb91e2", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <!--<base href="/">-->
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1&appId=105427799506481";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        
+        <!--<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header" id="topNavigation">
                     <button type="button" id="naviButton" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -51,9 +65,9 @@
                         <li><a href="#contact">Loengud</a></li>
                         <li><a href="#contact">Teemad</a></li>
                     </ul>
-                </div><!--/.nav-collapse -->
+                </div>
             </div>
-        </div>
+        </div>-->
         
         
         <div id="main">
@@ -68,10 +82,24 @@
             </p>
             <p id="title">
                 Pealisülesanded
-            </p>            
-            
+            </p>
+            <div id="player"></div>
+            <br />
+            <p id="text">
+                Eesti mõttemaastikud_EV 95<br />
+    muusika: Pastacas & Tenniscoats – ‘Yaki-Läki’<br />
+    Toimetaja: Jaan Tootsen / Heli: Külli Tüli / Pikkus 49.30<br />
+Ööülikool 2013/2014<br />
+            </p>
+            <div id="share">
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                <br /><br />
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.neti.ee" data-via="ylikool">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+            <div class="fb-comments" data-href="http://example.com/comments" data-width="500" data-numposts="5" data-colorscheme="light"></div>
         </div>
-                
+
     </body>
 </html>
 

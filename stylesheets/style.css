@@ -54,3 +54,18 @@ p {
     font-weight: bold;
     margin-top: -5px;
 }
+
+.album-cover {
+    display: none;
+}
+
+.ttw-music-player {
+    margin: 0;
+    width: 100%;
+}
+
+#share {
+    height: 100px;
+}
+
+.st_twitter_hcount {height: 24px;}

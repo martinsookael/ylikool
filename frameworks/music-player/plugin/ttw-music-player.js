@@ -380,29 +380,12 @@
                 var markup, $interface;
 
                 //I would normally use the templating plugin for something like this, but I wanted to keep this plugin's footprint as small as possible
-                markup = '<div class="ttw-music-player">' +
+                markup = '<div class="ttw-music-player" style="margin: 0; width: 300px;">' +
                         '<div class="player jp-interface">' +
-                        '<div class="album-cover">' +
-                        '<span class="img"></span>' +
-                        '            <span class="highlight"></span>' +
-                        '        </div>' +
-                        '        <div class="track-info">' +
-                        '            <p class="title"></p>' +
-                        '            <p class="artist-outer">By <span class="artist"></span></p>' +
-                        '            <div class="rating">' +
-                        '                <span class="rating-level rating-star on"></span>' +
-                        '                <span class="rating-level rating-star on"></span>' +
-                        '                <span class="rating-level rating-star on"></span>' +
-                        '                <span class="rating-level rating-star on"></span>' +
-                        '                <span class="rating-level rating-star"></span>' +
-                        '            </div>' +
-                        '        </div>' +
-                        '        <div class="player-controls">' +
-                        '            <div class="main">' +
-                        '                <div class="previous jp-previous"></div>' +
+                        '        <div class="player-controls" style="width: 300px; margin-left: 0;">' +
+                        '            <div class="main" style="width: 20px;">' +
                         '                <div class="play jp-play"></div>' +
                         '                <div class="pause jp-pause"></div>' +
-                        '                <div class="next jp-next"></div>' +
                         '<!-- These controls aren\'t used by this plugin, but jPlayer seems to require that they exist -->' +
                         '                <span class="unused-controls">' +
                         '                    <span class="jp-video-play"></span>' +
@@ -421,17 +404,12 @@
                         '                    <span class="jp-gui"></span>' +
                         '                </span>' +
                         '            </div>' +
-                        '            <div class="progress-wrapper">' +
+                        '            <div class="progress-wrapper" style="width: 250px;">' +
                         '                <div class="progress jp-seek-bar">' +
                         '                    <div class="elapsed jp-play-bar"></div>' +
                         '                </div>' +
                         '            </div>' +
                         '        </div>' +
-                        '    </div>' +
-                        '    <p class="description"></p>' +
-                        '    <div class="tracklist">' +
-                        '        <ol class="tracks"> </ol>' +
-                        '        <div class="more">View More...</div>' +
                         '    </div>' +
                         '    <div class="jPlayer-container"></div>' +
                         '</div>';
