@@ -41,8 +41,8 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
-        
-        <!--<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!--
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header" id="topNavigation">
                     <button type="button" id="naviButton" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -67,39 +67,56 @@
                     </ul>
                 </div>
             </div>
-        </div>-->
+        </div> -->
         
         
-        <div id="main">
-            <p id="tag">
-                Elu mõte
-            </p>
-            <p class="author">
-                Erkki-Sven Tüür
-            </p>
-            <p class="author">
-                Jaanus Rohumaa
-            </p>
-            <p id="title">
-                Pealisülesanded
-            </p>
-            <div id="player"></div>
-            <br />
-            <p id="text">
-                Eesti mõttemaastikud_EV 95<br />
-    muusika: Pastacas & Tenniscoats – ‘Yaki-Läki’<br />
-    Toimetaja: Jaan Tootsen / Heli: Külli Tüli / Pikkus 49.30<br />
-Ööülikool 2013/2014<br />
-            </p>
-            <div id="share">
-                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
-                <br /><br />
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.neti.ee" data-via="ylikool">Tweet</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        
+        
+        <div id="middle">
+            <div id="top">
+                <button type="button" id="menuButton" class="btn btn-default btn-s">
+                    <span id="searchIcon" class="glyphicon glyphicon-chevron-down"></span> Menüü
+                </button>
+                
+                <button type="button" id="searchButton" class="btn btn-default btn-s">
+                    <span id="searchIcon" class="glyphicon glyphicon-search"></span> Otsi
+                </button>
+                <a id="logo" href="#">ööülikool</a>
+            </div>            
+        
+            <div id="main">
+                <p id="tag">
+                    Teater
+                </p>
+                <p class="author">
+                    Erkki-Sven Tüür
+                </p>
+                <p class="author">
+                    Jaanus Rohumaa
+                </p>
+                <p id="title">
+                    Pealisülesanded
+                </p>
+                <div id="player"></div>
+                <br />
+                <p id="text">
+                    Lektorid: helilooja Erkki-Sven Tüür ja lavastaja Jaanus Rohumaa. <br />
+                    Toimetaja: Jaan Tootsen / Heli: Külli Tüli / Pikkus: 51.13 <br />
+                    Ööülikool 2005 <br />
+                    19.06.2005 
+                </p>
+                
+                <div id="share">
+                    <div id="facebook" class="fb-like" data-href="http://www.ylikool.ee" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                    
+                    <div id="twitter">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.ylikool.ee" data-via="ylikool">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                </div>
+                <div class="fb-comments" data-href="http://www.ylikool.ee" data-width="500" data-numposts="5" data-colorscheme="light"></div>
             </div>
-            <div class="fb-comments" data-href="http://example.com/comments" data-width="500" data-numposts="5" data-colorscheme="light"></div>
         </div>
-
     </body>
 </html>
 

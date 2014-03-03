@@ -9,7 +9,8 @@
 var myPlaylist = [
 
     {
-        mp3:'http://heli.er.ee/helid/2177831.mp3',
+        //mp3:'http://heli.er.ee/helid/2177831.mp3',
+        mp3:'http://heli.er.ee/helid/50910.mp3',
         //oga:'frameworks/music-player/demo/mix/1.ogg',
         title:'Sample',
         artist:'Sample',
