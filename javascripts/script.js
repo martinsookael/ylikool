@@ -34,8 +34,16 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 			.when('/contact', {
 				templateUrl : 'pages/contact.html',
 				controller  : 'contactController'
-			});
-	});
+			})
+        
+            .when('/:name', {
+                templateUrl: '/Users/martinsookael/4m4t3ur/p/ylikool/pages/loeng.html', 
+                controller: 'CMSController' 
+            });
+        
+            // use the HTML5 History API
+            //$locationProvider.html5Mode(true);
+    });
 
 	// create the controller and inject Angular's $scope
 	scotchApp.controller('mainController', function($scope) {
@@ -50,3 +58,25 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 	scotchApp.controller('contactController', function($scope) {
 		$scope.message = 'Contact us! JK. This is just a demo.';
 	});
+
+
+	scotchApp.controller('CMSController', function($scope, $route, $routeParams) {
+        console.log($routeParams);
+		$scope.message = 'JOU. '+$routeParams.name;
+	});
+
+
+/*
+function CMSController($scope, $route, $routeParams) {
+
+    $route.current.templateUrl = '/pages/' + $routeParams.name + ".html";
+
+    $.get($route.current.templateUrl, function (data) {
+        $scope.$apply(function () {
+            $('#views').html($compile(data)($scope));
+        });
+    });
+    ...
+}
+CMSController.$inject = ['$scope', '$route', '$routeParams'];
+*/

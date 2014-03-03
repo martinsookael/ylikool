@@ -3,4 +3,30 @@ p {
   margin-bottom: 10px;
 }
 
+#naviButton {
+    float: left;
+    margin-left: 15px;
+    margin-right: 0;
+}
 
+#logo {
+    color: #fff;
+    float: none;
+    font-size: 22pt;
+    position: relative;
+    top: 15px;
+}
+
+#topNavigation {
+    text-align: center;
+    background: #000;
+}
+
+#searchButton {
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+#searchIcon {
+}
