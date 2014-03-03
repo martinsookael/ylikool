@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="scotchApp">
     <head>
         <meta charset="utf-8">
         <title>ööülikool</title>
@@ -22,13 +22,26 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
     </head>
-    <body>
-        Hello yes, this is dog!
-        <br />
-         <input type="text" ng-model="yourName" placeholder="Enter a name here">
+    <body ng-controller="mainController">
+        
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+            <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+        </ul>
+
+        
+		<div id="main">
+            
+            <div ng-view></div>
+			<!-- angular templating -->
+			<!-- this is where content will be injected -->
+
+		</div>
+        
+         <!--<input type="text" ng-model="yourName" placeholder="Enter a name here">
           <hr>
-          <h1>Hello {{yourName}}!</h1>
-        <p>1 + 2 = {{ 1 + 2 }}</p>
+          <h1>Hello {{yourName}}!</h1>-->
 
     </body>
 </html>
