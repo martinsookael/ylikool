@@ -24,13 +24,14 @@ function cl(data) {
 }
 
 
+angular.module('scotchApp', ['ngSanitize'])
 
 var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
 	// configure our routes
 	scotchApp.config(function($routeProvider) {
 		$routeProvider
-
+/*
 			// route for the home page
 			.when('/', {
 				templateUrl : 'pages/home.html',
@@ -44,18 +45,12 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 			})
 
 			// route for the about page
-        /*
-			.when('/loeng', {
-				templateUrl : 'pages/loeng.html',
-				controller  : 'trollController'
-			})
-        */
 			// route for the contact page
 			.when('/contact', {
 				templateUrl : 'pages/contact.html',
 				controller  : 'contactController'
 			})
-        
+*/        
             .when('/loeng/:name', { 
                 templateUrl: 'pages/loeng.html', 
                 controller: 'CMSController' 
@@ -65,26 +60,30 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
             //$locationProvider.html5Mode(true);
     });
 
+
 	// create the controller and inject Angular's $scope
-	scotchApp.controller('mainController', function($scope) {
+	scotchApp.controller('mainController', function($scope, $route, $routeParams) {
 		// create a message to display in our view
-		$scope.message = 'Everyone come and see how good I look!';
+		//$scope.message = 'Everyone come and see how good I look!';
+        //console.log($scope);
 	});
-
-	scotchApp.controller('aboutController', function($scope) {
-		$scope.message = 'Look! I am an about page.';
-	});
-
-	scotchApp.controller('contactController', function($scope) {
-		$scope.message = 'Contact us! JK. This is just a demo.';
-	});
-
 
 	scotchApp.controller('CMSController', function($scope, $route, $routeParams) {
         //console.log($routeParams);
 		$scope.message = 'JOU. '+$routeParams.name;
-        $scope.nid = $routeParams.name;
+        var nid = $routeParams.name;
+        var data = db[nid];
+        $scope.title = data.title;
+        $scope.tag = data.tag;
+        $scope.source = data.source;
+        $scope.text = data.text;
+        $scope.date = data.date;
+        $scope.authors = data.authors;   
+        $scope.shortSource = data.shortSource;
 	});
+
+
+
 
 
 /*

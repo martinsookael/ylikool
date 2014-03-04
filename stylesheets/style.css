@@ -96,6 +96,10 @@ html, head, body {height: 100%;}
     margin-top: 15px;
 }
 
+#nid {
+    display: none;
+}
+
 /*
 
 #naviButton {
