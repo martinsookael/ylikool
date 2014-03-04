@@ -1,4 +1,6 @@
-shortcuts = {
+var db = Array();
+
+db = {
     "1":{
         "title" : "Maast ja ilmast",
         "authors" : "Peeter Laurits",

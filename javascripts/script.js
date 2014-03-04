@@ -1,8 +1,10 @@
 // JavaScript Document
 
 $(document).ready(function() { 
+    //console.log("ready");
             //var description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id tortor nisi. Aenean sodales diam ac lacus elementum scelerisque. Suspendisse a dui vitae lacus faucibus venenatis vel id nisl. Proin orci ante, ultricies nec interdum at, iaculis venenatis nulla. ';
-
+/*
+        function play() {
             $('#player').ttwMusicPlayer(myPlaylist, {
                 autoplay: false, 
                 //description:description,
@@ -10,6 +12,8 @@ $(document).ready(function() {
                     swfPath:'../frameworks/music-player/plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
                 }
             });
+        }
+*/
 
 });
 
@@ -34,21 +38,28 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 			})
 
 			// route for the about page
-			.when('/about', {
+			.when('/otsi', {
 				templateUrl : 'pages/about.html',
 				controller  : 'aboutController'
 			})
 
+			// route for the about page
+        /*
+			.when('/loeng', {
+				templateUrl : 'pages/loeng.html',
+				controller  : 'trollController'
+			})
+        */
 			// route for the contact page
 			.when('/contact', {
 				templateUrl : 'pages/contact.html',
 				controller  : 'contactController'
 			})
         
-            .when('/:name', {
-                templateUrl: '/Users/martinsookael/4m4t3ur/p/ylikool/pages/loeng.html', 
+            .when('/loeng/:name', { 
+                templateUrl: 'pages/loeng.html', 
                 controller: 'CMSController' 
-            });
+            })
         
             // use the HTML5 History API
             //$locationProvider.html5Mode(true);
@@ -70,8 +81,9 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
 
 	scotchApp.controller('CMSController', function($scope, $route, $routeParams) {
-        console.log($routeParams);
+        //console.log($routeParams);
 		$scope.message = 'JOU. '+$routeParams.name;
+        $scope.nid = $routeParams.name;
 	});
 
 

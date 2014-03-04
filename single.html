@@ -31,7 +31,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <!--<base href="/">-->
     </head>
-    <body>
+    <body ng-controller="mainController">
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -40,37 +40,6 @@
           js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1&appId=105427799506481";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-
-        <!--
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header" id="topNavigation">
-                    <button type="button" id="naviButton" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                
-                    <button type="button" id="searchButton" class="btn btn-default btn-s">
-                        <span id="searchIcon" class="glyphicon glyphicon-search"></span> Otsi
-                    </button>
-                
-                    <a class="navbar-brand" id="logo" href="#">ööülikool</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Esileht</a></li>
-                        <li><a href="#about">Õppejõud</a></li>
-                        <li><a href="#contact">Loengud</a></li>
-                        <li><a href="#contact">Teemad</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
-        
-        
-        
         
         <div id="middle">
             <div id="top">
@@ -78,26 +47,36 @@
                     <span id="searchIcon" class="glyphicon glyphicon-chevron-down"></span> Menüü
                 </button>
                 
-                <button type="button" id="searchButton" class="btn btn-default btn-s">
-                    <span id="searchIcon" class="glyphicon glyphicon-search"></span> Otsi
-                </button>
+                <a href="#about">
+                    <button type="button" id="searchButton" class="btn btn-default btn-s">
+                        <span id="searchIcon" class="glyphicon glyphicon-search"></span> Otsi
+                    </button>
+                </a>
                 <a id="logo" href="#">ööülikool</a>
             </div>            
         
+            
             <div id="main">
+                <div ng-view></div>
+    <!--            
                 <p id="tag">
                     Teater
                 </p>
+                
                 <p class="author">
                     Erkki-Sven Tüür
                 </p>
+                
                 <p class="author">
                     Jaanus Rohumaa
                 </p>
+                
                 <p id="title">
                     Pealisülesanded
                 </p>
+                
                 <div id="player"></div>
+                
                 <br />
                 <p id="text">
                     Lektorid: helilooja Erkki-Sven Tüür ja lavastaja Jaanus Rohumaa. <br />
@@ -115,7 +94,7 @@
                     </div>
                 </div>
                 <div class="fb-comments" data-href="http://www.ylikool.ee" data-width="500" data-numposts="5" data-colorscheme="light"></div>
-            </div>
+            </div> -->
         </div>
     </body>
 </html>
