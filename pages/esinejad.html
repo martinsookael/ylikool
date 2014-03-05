@@ -24,13 +24,13 @@
                 
             });
         </script>
-<!--
+
         <ul class="nav nav-tabs nav-justified" id="valiOtsing">
-          <li class="active"><a >Loengud</a></li>
-          li><a href="#esinejad">Esinejad</a></li>
-          <li><a href="#tags">Teemad</a></li>
+          <li><a>Loengud</a></li>
+          <li class="active"><a >Esinejad</a></li>
+          <li><a >Teemad</a></li>
         </ul>
--->
+
 
         <form id="otsiNupp">
             <div class="input-group">
@@ -41,15 +41,16 @@
             </div>
         </form>
 
-		<h1>Vali loeng</h1>
+		<h1>Vali õppejõud</h1>
 
-        <p class="authors" ng-repeat="(key, value) in db">
+        <p class="authors" ng-repeat="(key, value) in db ">
             <a href=single.html#/loeng/{{key}}>
-                <span ng-repeat="author in value.authors">
+                {{value.authors}}
+                <!---<span ng-repeat="author in value.authors">
                 {{author}}{{$last ? '' : ', '}}
                 </span>
-                -
-                {{value.title}}
+                
+                {{value.title}}-->
             </a>
         </p>
 

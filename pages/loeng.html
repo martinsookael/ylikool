@@ -21,7 +21,7 @@
                     {{date}}
                 </p>
                 
-                <div id="share">
+                <!--<div id="share">
                     <div id="facebook" class="fb-like" data-href="http://www.ylikool.ee" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
                     
                     <div id="twitter">
@@ -29,7 +29,7 @@
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                     </div>
                 </div>
-                <div class="fb-comments" data-href="http://www.ylikool.ee" data-width="500" data-numposts="5" data-colorscheme="light"></div>
+                <div class="fb-comments" data-href="http://www.ylikool.ee" data-width="500" data-numposts="5" data-colorscheme="light"></div>-->
 
 <script>
     
@@ -44,16 +44,30 @@
     //var ja = angular.element('[ng-view]').scope();
     //cl(ja);
     
-    console.log();
-
-var myPlaylist = [
-    {
-        mp3:'http://heli.er.ee/helid/50910.mp3',
-    }
-];
+    //var lalalala = $("#title").scope();
+    var title = angular.element('#title');
+    console.log(title.html());
     
     
-/*$(document).ready(function() { //console.log(db[1].authors);
+    //console.log(window.MY_SCOPE);
+        
+    /*function something($scope) {
+        console.log($scope.source);
+        myPlaylist = [
+                {
+                    mp3:$scope.source,
+                }
+            ];   
+    } */
+    
+    var myPlaylist = [
+        {
+            mp3:'http://heli.er.ee/helid/50910.mp3',
+        }
+    ];
+    
+    
+$(document).ready(function() { //console.log(db[1].authors);
     
     //var nid = $("#nid").html();
     //console.log(nid);
@@ -67,5 +81,5 @@ var myPlaylist = [
         }
     });
 
-});*/
+});
 </script>

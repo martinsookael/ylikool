@@ -30,6 +30,12 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 				templateUrl : 'pages/otsi.html',
 				controller  : 'otsiController'
 			})
+
+            .when('/esinejad', {
+				templateUrl : 'pages/esinejad.html',
+				controller  : 'otsiController'
+			})
+        
 /*
 			// route for the about page
 			// route for the contact page
@@ -77,6 +83,8 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
         $scope.date = data.date;
         $scope.authors = data.authors;   
         $scope.shortSource = data.shortSource;
+       // something($scope);
+        myPlaylist.mp3= data.source;
 	})
 
 
