@@ -24,7 +24,7 @@ function cl(data) {
 }
 
 
-angular.module('scotchApp', ['ngSanitize'])
+//angular.module('scotchApp', ['ngSanitize'])
 
 var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
@@ -62,7 +62,8 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
 
 	// create the controller and inject Angular's $scope
-	scotchApp.controller('mainController', function($scope, $route, $routeParams) {
+	//scotchApp.controller('mainController', function($scope, $route, $routeParams) {
+	scotchApp.controller('mainController', function($scope) {
 		// create a message to display in our view
 		//$scope.message = 'Everyone come and see how good I look!';
         //console.log($scope);
@@ -80,8 +81,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
         $scope.date = data.date;
         $scope.authors = data.authors;   
         $scope.shortSource = data.shortSource;
-	});
-
+	})
 
 
 

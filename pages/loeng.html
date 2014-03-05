@@ -32,6 +32,7 @@
                 <div class="fb-comments" data-href="http://www.ylikool.ee" data-width="500" data-numposts="5" data-colorscheme="light"></div>
 
 <script>
+    
     //var scope = angular.element(el).scope();
     //var jjj = angular.element(document.getElementById("main")).scope();
     //var jjj = angular.element($("#main").scope());
@@ -42,6 +43,8 @@
 
     //var ja = angular.element('[ng-view]').scope();
     //cl(ja);
+    
+    console.log();
 
 var myPlaylist = [
     {
@@ -58,7 +61,7 @@ $(document).ready(function() { //console.log(db[1].authors);
     //$("#tag").html(db[1].tag);
     
     $('#player').ttwMusicPlayer(myPlaylist, {
-        autoplay: true, 
+        autoplay: false, 
         jPlayer:{
             swfPath:'../frameworks/music-player/plugin/jquery-jplayer' 
         }
