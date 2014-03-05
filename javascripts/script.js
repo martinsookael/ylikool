@@ -60,10 +60,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 		// create a message to display in our view
 		$scope.message = 'Otsi!';
         //console.log($scope);
-        
-        console.log(db);
         $scope.db = db;
-        
         //$scope.title = data.title;
         
 	});
