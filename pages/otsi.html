@@ -1,0 +1,53 @@
+        <script>
+            $(document).ready(function() { 
+            
+                // a quick search!
+                $("#otsi").keyup(function(){ 
+                    
+                    // Retrieve the input field text and reset the count to zero
+                    var filter = $(this).val(), count = 0;
+                    
+                    // Loop through the comment list
+                    $(".authors").each(function(){
+                        
+                        // If the list item does not contain the text phrase fade it out
+                        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                            $(this).fadeOut();
+                            
+                            // Show the list item if the phrase matches and increase the count by 1
+                        } else {
+                            $(this).show();
+                            count++;
+                        }
+                    });
+                });    
+                
+            });
+        </script>
+
+        <form id="otsiNupp">
+            <div class="input-group">
+              <input type="text" class="form-control" name="otsing" id="otsi" >
+              <span class="input-group-addon">
+                <span id="searchIcon" class="glyphicon glyphicon-search"></span>
+                </span>
+            </div>
+        </form>
+
+		<h1>Vali loeng</h1>
+
+        <p class="authors" ng-repeat="(key, value) in db">
+            <a href=single.html#/loeng/{{key}}>
+                <span ng-repeat="author in value.authors">
+                {{author}}{{$last ? '' : ', '}}
+                </span>
+                -
+                {{value.title}}
+            </a>
+        </p>
+
+        <!--<h1>Vali õppejõud</h1>
+
+        <p class="author" ng-repeat="ddd in db">
+            {{ddd.authors}}
+        </p>-->

@@ -40,14 +40,13 @@
           js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1&appId=105427799506481";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-        
         <div id="middle">
             <div id="top">
                 <button type="button" id="menuButton" class="btn btn-default btn-s">
                     <span id="searchIcon" class="glyphicon glyphicon-chevron-down"></span> Menüü
                 </button>
                 
-                <a href="#about">
+                <a href="#otsi">
                     <button type="button" id="searchButton" class="btn btn-default btn-s">
                         <span id="searchIcon" class="glyphicon glyphicon-search"></span> Otsi
                     </button>
@@ -58,6 +57,7 @@
             
             <div id="main">
                 <div ng-view></div>
+            </div>
         </div>
     </body>
 </html>

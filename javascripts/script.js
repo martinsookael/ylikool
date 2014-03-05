@@ -1,20 +1,7 @@
 // JavaScript Document
 
 $(document).ready(function() { 
-    //console.log("ready");
-            //var description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id tortor nisi. Aenean sodales diam ac lacus elementum scelerisque. Suspendisse a dui vitae lacus faucibus venenatis vel id nisl. Proin orci ante, ultricies nec interdum at, iaculis venenatis nulla. ';
-/*
-        function play() {
-            $('#player').ttwMusicPlayer(myPlaylist, {
-                autoplay: false, 
-                //description:description,
-                jPlayer:{
-                    swfPath:'../frameworks/music-player/plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-        }
-*/
-
+    
 });
 
 
@@ -31,19 +18,19 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 	// configure our routes
 	scotchApp.config(function($routeProvider) {
 		$routeProvider
-/*
+
 			// route for the home page
 			.when('/', {
-				templateUrl : 'pages/home.html',
-				controller  : 'mainController'
+				templateUrl : 'pages/otsi.html',
+				controller  : 'otsiController'
 			})
 
 			// route for the about page
 			.when('/otsi', {
-				templateUrl : 'pages/about.html',
-				controller  : 'aboutController'
+				templateUrl : 'pages/otsi.html',
+				controller  : 'otsiController'
 			})
-
+/*
 			// route for the about page
 			// route for the contact page
 			.when('/contact', {
@@ -67,6 +54,18 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 		// create a message to display in our view
 		//$scope.message = 'Everyone come and see how good I look!';
         //console.log($scope);
+	});
+
+	scotchApp.controller('otsiController', function($scope) {
+		// create a message to display in our view
+		$scope.message = 'Otsi!';
+        //console.log($scope);
+        
+        console.log(db);
+        $scope.db = db;
+        
+        //$scope.title = data.title;
+        
 	});
 
 	scotchApp.controller('CMSController', function($scope, $route, $routeParams) {
