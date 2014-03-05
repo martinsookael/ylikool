@@ -15,6 +15,29 @@ function cl(data) {
 
 var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
+
+   //angular.module('scotchApp', []).config(function($sceDelegateProvider) {
+   scotchApp.config(function($sceDelegateProvider) {
+     $sceDelegateProvider.resourceUrlWhitelist([
+       // Allow same origin resource loads.
+       'self',
+       // Allow loading from our assets domain.  Notice the difference between * and **.
+       'http://heli.er.ee/helid/oy/**']);
+
+     // The blacklist overrides the whitelist so the open redirect here is blocked.
+     $sceDelegateProvider.resourceUrlBlacklist([
+       'http://myapp.example.com/clickThru**']);
+     });
+
+/*
+        scotchApp.factory("validateUrl",function($sce){
+            return {
+                getValidUrl:function(url){
+                    return $sce.trustAsResourceUrl(url)
+                }
+            };
+        }); */
+        
 	// configure our routes
 	scotchApp.config(function($routeProvider) {
 		$routeProvider
@@ -78,6 +101,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
         var data = db[nid];
         $scope.title = data.title;
         $scope.tag = data.tag;
+        //$scope.source = validateUrl.getValidUrl("data.source");
         $scope.source = data.source;
         $scope.text = data.text;
         $scope.date = data.date;
