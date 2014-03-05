@@ -53,7 +53,6 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
 
 	scotchApp.controller('mainController', function($scope) {
-
     });
 
     scotchApp.controller('otsiController', function($scope) {
