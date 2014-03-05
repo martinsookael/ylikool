@@ -84,7 +84,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
         $scope.authors = data.authors;   
         $scope.shortSource = data.shortSource;
        // something($scope);
-        myPlaylist.mp3= data.source;
+        // myPlaylist.mp3= data.source;
 	})
 
 
