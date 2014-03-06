@@ -120,4 +120,12 @@ p {
     position:fixed;
     right: 0;
     bottom: 0;
+    display: none;
 }
+
+@media all and (min-width:500px) {
+  #forkMe {
+    display: inline;
+  }
+}
+
