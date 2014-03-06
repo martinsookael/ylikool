@@ -14,7 +14,12 @@
                 </p>
                 
                 <!--<div id="player"></div>-->
-                <audio ng-src="{{source}}" controls autoplay crossorigin="anonymous" id="player" type="audio/mp3"></audio>
+                <!--<audio ng-src="{{source}}" controls autoplay crossorigin="anonymous" id="player" type="audio/mp3"></audio>-->
+                <p id="playerContainer">
+                <audio controls="controls" crossorigin="anonymous" autoplay="true" id="player" style="width: 100%;" >
+                    <source ng-src="{{source}}"  type="audio/mp3" />
+                </audio>
+                </p>
                 
                 <br />
                 <p id="text" >
@@ -33,57 +38,13 @@
                 <div class="fb-comments" data-href="http://www.ylikool.ee" data-width="500" data-numposts="5" data-colorscheme="light"></div>
 
 <script>
-    var player = new MediaElementPlayer('#player');
-    
-    //var scope = angular.element(el).scope();
-    //var jjj = angular.element(document.getElementById("main")).scope();
-    //var jjj = angular.element($("#main").scope());
-    //var jjj = angular.element($("#main")).scope()
-    
-    //console.log(jjj.message);
-    //console.log(jjj.shortSource);
 
-    //var ja = angular.element('[ng-view]').scope();
-    //cl(ja);
-    
-    //var lalalala = $("#title").scope();
-    
-    //var title = angular.element('#title');
-    //console.log(title.html());
-    
-    
-    //console.log(window.MY_SCOPE);
-        
-    /*function something($scope) {
-        console.log($scope.source);
-        myPlaylist = [
-                {
-                    mp3:$scope.source,
-                }
-            ];   
-    } */
-    /*
-    var myPlaylist = [
-        {
-            mp3:'http://heli.er.ee/helid/50910.mp3',
-        }
-    ];
-    */
     
 $(document).ready(function() { //console.log(db[1].authors);
+
+//$('video,audio').mediaelementplayer(/* Options */);   // HHHHERE
+
     
-    //var nid = $("#nid").html();
-    //console.log(nid);
-    
-    //$("#tag").html(db[1].tag);
-    
-    /*
-    $('#player').ttwMusicPlayer(myPlaylist, {
-        autoplay: false, 
-        jPlayer:{
-            swfPath:'../frameworks/music-player/plugin/jquery-jplayer' 
-        }
-    });
- */
+
 });
 </script>
