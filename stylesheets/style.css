@@ -3,9 +3,6 @@ p {
   margin-bottom: 10px;
 }
 
-/*
-html, head, body {height: 100%;}
-*/
 #top {
     width: 100%;
     height: 50px;
@@ -118,74 +115,3 @@ html, head, body {height: 100%;}
 #playerContainer {
     margin-top: 20px;
 }
-
-/*
-
-#naviButton {
-    float: left;
-    margin-left: 15px;
-    margin-right: 0;
-}
-
-#logo {
-    color: #fff;
-    float: none;
-    font-size: 22pt;
-    position: relative;
-    top: 15px;
-}
-
-#topNavigation {
-    text-align: center;
-    background: #000;
-    width: 100%;
-}
-
-#searchButton {
-    float: right;
-    margin-top: 10px;
-    margin-right: 15px;
-}
-
-
-#main {
-    margin: 100px 15px 50px 15px;
-}
-
-#tag {
-    color: #999;
-    font-size: 150%;
-    font-weight: 300;
-    margin-bottom: 0px;
-}
-
-.author {
-    color: #000;
-    font-size: 150%;    
-    margin-bottom: 0px;
-    font-weight: 300;
-}
-
-#title {
-    color: #000;
-    font-size: 300%;    
-    margin-bottom: 0px;
-    font-weight: bold;
-    margin-top: -5px;
-}
-
-.album-cover {
-    display: none;
-}
-
-.ttw-music-player {
-    margin: 0;
-    width: 100%;
-}
-
-#share {
-    height: 100px;
-}
-
-.st_twitter_hcount {height: 24px;}
-*/
