@@ -16,8 +16,10 @@
                 <!--<div id="player"></div>-->
                 <!--<audio ng-src="{{source}}" controls autoplay crossorigin="anonymous" id="player" type="audio/mp3"></audio>-->
                 <p id="playerContainer">
-                <audio controls="controls" crossorigin="anonymous" autoplay="true" id="player" style="width: 100%;" >
-                    <source ng-src="{{source}}"  type="audio/mp3" />
+                <!--<audio controls="controls" crossorigin="anonymous" autoplay="true" autoplay id="player" style="width: 100%;" >-->
+                <audio id="player" style="width: 100%; heigth: 30px;" conrols="controls" >
+                    <source ng-src="{{source}}"  type="audio/mp3"  />
+                    <!--<source ng-src="OY2008_Jaan_Kaplinski_Muusika_mojud.mp3"  type="audio/mp3" />-->
                 </audio>
                 </p>
                 
@@ -37,13 +39,38 @@
                 </div>
                 <div class="fb-comments" data-href="http://www.ylikool.ee" data-width="500" data-numposts="5" data-colorscheme="light"></div>
 
-<script>
+<script type="text/javascript">
 
+    var player = new MediaElementPlayer('#player'/* Options */);
     
+    var lala = document.getElementById('player'); 
+
+        
+    lala.addEventListener('canplay', function(e) {
+        player.play();
+    });
+    
+
+
+
 $(document).ready(function() { //console.log(db[1].authors);
-
-//$('video,audio').mediaelementplayer(/* Options */);   // HHHHERE
-
+    
+    //console.log(player);
+    /*
+    $('#player').mediaelementplayer({
+        success: function(mediaElement, domObject) {
+            if (mediaElement.pluginType == 'flash') {
+                mediaElement.addEventListener('canplay', function() {
+                    // Player is ready
+                    mediaElement.play();
+                }, false);
+            }
+        },
+        error: function() {
+            alert('Error setting media!');
+        }
+    });
+*/
     
 
 });

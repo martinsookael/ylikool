@@ -2,7 +2,7 @@ var db = new Array();
 
 db = {
 
-    "1":{"title" : "Arhidektuur on…",
+    "1":{"title" : "Arhitektuur on…",
     "authors" : new Array("David Vseviov", "Imre Kose", "Tui Hirv", "Rein Kilk", "Marten Kaevats", "Doris Kareva"),
     "text" : "Eesti Raadio “Ööülikooli” mõttetalgud autoriõiguse küsimuses. Eestkõnelejad Jaak Johanson ja Peeter Laurits, sekundeerivad Andres Ehin, Marek Strandberg jt.",
     "date" : "2010-03-14 00:19:17",
