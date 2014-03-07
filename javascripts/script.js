@@ -69,6 +69,8 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
         $scope.text = data.text;
         $scope.date = data.date;
         $scope.authors = data.authors;   
+        $scope.heli = data.heli;   
+        $scope.toimetaja = data.toimetaja;   
         $scope.shortSource = data.shortSource; 
         $scope.nid = nid; 
     })

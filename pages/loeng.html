@@ -17,10 +17,12 @@
                 </audio>
                 </p>
                 
-                <br />
                 <p id="text" >
                     {{text}} <br />
-                    {{date}}
+                    Heli: {{heli}} <br />
+                    Toimetaja: {{toimetaja}} <br />
+                    Salvestatud: {{date}}<br />
+                    <a href="{{source}}">Laadi alla mp3</a><br />
                 </p>
                 
                 <div id="share">
@@ -37,6 +39,6 @@
     var player = new MediaElementPlayer('#player'/* Options */);
     var playerStatus = document.getElementById('player'); 
     playerStatus.addEventListener('canplay', function(e) {
-        //player.play();
+        player.play();
     });
 </script>
