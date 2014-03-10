@@ -1,53 +1,29 @@
-        <script>
-            $(document).ready(function() { 
-            
-                // this here creates the search
-                $("#otsi").keyup(function(){ 
-                    
-                    // Retrieve the input field text and reset the count to zero
-                    var filter = $(this).val(), count = 0;
-                    
-                    // Loop through the comment list
-                    $(".authors").each(function(){
-                        
-                        // If the list item does not contain the text phrase fade it out
-                        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-                            $(this).fadeOut();
-                            
-                            // Show the list item if the phrase matches and increase the count by 1
-                        } else {
-                            $(this).show();
-                            count++;
-                        }
-                    });
-                });    
-                
-            });
-        </script>
+<!--<ul class="nav nav-tabs nav-justified" id="valiOtsing">
+  <li class="active"><a >Loengud</a></li>
+  <li><a href="#esinejad">Esinejad</a></li>
+  <li><a href="#tags">Teemad</a></li>
+</ul>-->
 
-        <!--<ul class="nav nav-tabs nav-justified" id="valiOtsing">
-          <li class="active"><a >Loengud</a></li>
-          <li><a href="#esinejad">Esinejad</a></li>
-          <li><a href="#tags">Teemad</a></li>
-        </ul>-->
+<form id="otsiNupp">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Otsi..." data-ng-model="searchText" name="otsing" id="otsi" >
+      <span class="input-group-addon">
+        <span id="searchIcon" class="glyphicon glyphicon-search"></span>
+        </span>
+    </div>
+</form>
 
-        <form id="otsiNupp">
-            <div class="input-group">
-              <input type="text" class="form-control" name="otsing" id="otsi" >
-              <span class="input-group-addon">
-                <span id="searchIcon" class="glyphicon glyphicon-search"></span>
-                </span>
-            </div>
-        </form>
-
-		<h1>Vali loeng</h1>
-
-        <p class="authors" ng-repeat="(key, value) in db">
-            <a href=#loeng/{{key}}>
-                <span ng-repeat="author in value.authors">
-                {{author}}{{$last ? '' : ', '}}
-                </span>
-                -
-                {{value.title}}
-            </a>
-        </p>
+<h1>Vali loeng</h1>
+<p data-ng-show="db.length > 0 && filteredLectures.length <= 0">
+    Tulemusi ei leitud...
+</p>
+<p class="authors"
+   data-ng-repeat="lecture in filteredLectures = (db | searchFilter:searchText | orderBy:'authors[0]')">
+    <a href="#loeng/{{lecture.index}}">
+        <span data-ng-repeat="author in lecture.authors">
+        {{author}}{{$last ? '' : ', '}}
+        </span>
+        -
+        {{lecture.title}}
+    </a>
+</p>

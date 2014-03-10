@@ -1,4 +1,4 @@
-// JavaScript Document
+    // JavaScript Document
 
 $(document).ready(function() { 
     
@@ -49,6 +49,28 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
                 templateUrl: 'pages/loeng.html', 
                 controller: 'CMSController' 
             })
+    });
+
+    scotchApp.filter('searchFilter', function() {
+        return function(lectures, searchText) {
+
+            var regexp = new RegExp(searchText, 'i');
+            return lectures.filter(function(lecture) {
+                var found = false;
+                //!TODO: Add whatever other fields need to be searched
+                if (lecture.title.search(regexp) > -1) {
+                    found = true;
+                }
+                if (!found) {
+                    lecture.authors.some(function(author) {
+                        found = author.search(regexp) > -1;
+                        return found;
+                    });
+                }
+
+                return found;
+            });
+        };
     });
 
 
