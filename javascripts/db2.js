@@ -1,6 +1,6 @@
 var db = new Array();
 
-db = {
+data = {
 
     "1":{"title" : "Arhitektuur on…",
     "authors" : new Array("David Vseviov", "Imre Kose", "Tui Hirv", "Rein Kilk", "Marten Kaevats", "Doris Kareva"),
@@ -10,7 +10,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2008_David_Vseviov_Arhitektuur_on_.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.55",
+    "pikkus" : "49.55"
     },
     "2":{"title" : "Muusika mõjud",
     "authors" : new Array("Jaan Kaplinski"),
@@ -20,7 +20,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2008_Jaan_Kaplinski_Muusika_mojud.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.45",
+    "pikkus" : "50.45"
     },
     "3":{"title" : "Ajatus luubis",
     "authors" : new Array("Lembit Peterson", "Toomas Paul", "Savid Vseviov"),
@@ -30,7 +30,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2008_Lembit_Peterson_Toomas_Paul_David_Vseviov_Ajatus_luubis.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.14",
+    "pikkus" : "50.14"
     },
     "4":{"title" : "Elada elu ennast",
     "authors" : new Array("Alari Allik"),
@@ -40,7 +40,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2008_Alari_Allik_Elada_elu_ennast.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Andri Luup",
-    "pikkus" : "51.00",
+    "pikkus" : "51.00"
     },
     "5":{"title" : "Kõnelused jumalaga",
     "authors" : new Array("Mihhail Lotman"),
@@ -50,7 +50,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2008_Mihhail_Lotman_Konelused_jumalaga.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "45.50",
+    "pikkus" : "45.50"
     },
     "6":{"title" : "T.S. Eliot – 'Sõnad, kui kõne on läbi, jõuavad vaikusesse'",
     "authors" : new Array("Anne Lange", "Toivo Pilli"),
@@ -60,7 +60,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2008_Anne_Lange_ja_Toivo_Pilli_T_S_Eliot_Sonad_kui_kone_on_labi_jouavad_vaikusesse.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.59",
+    "pikkus" : "50.59"
     },
     "7":{"title" : "Kosmiline maastik",
     "authors" : new Array("Kaupo Palo"),
@@ -70,7 +70,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Kaupo_Palo_Kosmiline_maastik.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.38",
+    "pikkus" : "52.38"
     },
     "8":{"title" : '"See on nagu hiina keel"',
     "authors" : new Array("Katja Koort"),
@@ -80,7 +80,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Katja_Koort_See_on_nagu_hiina_keel.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Andri Luup,Jaan Tootsen",
-    "pikkus" : "51.40",
+    "pikkus" : "51.40"
     },
     "9":{"title" : "Ideaalne kapitalism",
     "authors" : new Array("Kalev Jaik"),
@@ -90,7 +90,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Kalev_Jaik_ja_Kristjan_Laes_Ideaalne_kapitalism.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.56",
+    "pikkus" : "51.56"
     },
     "10":{"title" : "Sissejuhatus keskkonnaesteetikasse",
     "authors" : new Array("Kaia Lehari"),
@@ -100,7 +100,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Kaia_Lehari_Sissejuhatus_keskkonnaesteetikasse.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.21",
+    "pikkus" : "50.21"
     },
     "11":{"title" : "Vabanemisest",
     "authors" : new Array("Peeter Volkonski"),
@@ -110,7 +110,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Peeter_Volkonski_Vabanemisest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.21",
+    "pikkus" : "52.21"
     },
     "12":{"title" : "Suveöised vestlused",
     "authors" : new Array("Marek Strandberg"),
@@ -120,7 +120,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Rein_Lang_ja_Marek_Strandberg_Suveoised_vestlused.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.40",
+    "pikkus" : "52.40"
     },
     "13":{"title" : "Vabadus, võrdsus, vendlus",
     "authors" : new Array("Marju Lauristin"),
@@ -130,7 +130,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Marju_Lauristin_ja_Hans_H_Luik_Vabadus_vordsus_vendlus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "53.04",
+    "pikkus" : "53.04"
     },
     "14":{"title" : "Sipelgakaru tants ja teised lustilood",
     "authors" : new Array("Peeter Volkonski"),
@@ -140,7 +140,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Peeter_Volkonski_Sipelgakaru_tants_ja_teised_lustilood.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.31",
+    "pikkus" : "49.31"
     },
     "15":{"title" : "Koostööst looduses ja inimühiskonnas",
     "authors" : new Array("Toomas Trapido"),
@@ -150,7 +150,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Toomas_Trapido_Koostoost_looduses_ja_inimuhiskonnas.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.12",
+    "pikkus" : "51.12"
     },
     "16":{"title" : "Ajaloo kordumisest",
     "authors" : new Array("Tõnu Õnnepalu"),
@@ -160,7 +160,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Tonu_Onnepalu_Ajaloo_kordumisest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "48.29",
+    "pikkus" : "48.29"
     },
     "17":{"title" : "Pealisülesanded",
     "authors" : new Array("Virve Aruoja"),
@@ -170,7 +170,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Virve_Aruoja_Pealisulesanded,OY2007_Virve_Aruoja_Pealisulesanded.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.19",
+    "pikkus" : "51.19"
     },
     "18":{"title" : "Kutsumus",
     "authors" : new Array("Jaanus Rohumaa"),
@@ -180,7 +180,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Markus_Jarvi_ja_Jaanus_Rohumaa_Kutsumus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.16",
+    "pikkus" : "51.16"
     },
     "19":{"title" : "Sotsiaalsest ettevõtlusest",
     "authors" : new Array("Artur Taevere"),
@@ -190,7 +190,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Artur_Taevere_Sotsiaalsest_ettevotlusest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "45.17",
+    "pikkus" : "45.17"
     },
     "20":{"title" : "Tartumaa keel",
     "authors" : new Array("Jaan Kaplinski"),
@@ -200,7 +200,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Jaan_Kaplinski_Tartumaa_keel.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "44.10",
+    "pikkus" : "44.10"
     },
     "21":{"title" : "See on uus saade",
     "authors" : new Array("Alari Allik"),
@@ -210,7 +210,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Adolf_Sapiro_Alari_Allik_Aleksander_Pepeljajev_Aleksei_Turovski_ja_Alex_Lotman_See_on_uus_saade.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "22.11",
+    "pikkus" : "22.11"
     },
     "22":{"title" : "Linnud muusikas",
     "authors" : new Array("UUED LOENGUD"),
@@ -220,7 +220,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Fred_Jussi_Linnud_muusikas.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.27",
+    "pikkus" : "50.27"
     },
     "23":{"title" : "Loomad Vanas Testamendis",
     "authors" : new Array("Aleksei Turovski"),
@@ -230,7 +230,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Aleksei_Turovski_Loomad_Vanas_Testamendis.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.51",
+    "pikkus" : "50.51"
     },
     "24":{"title" : "Fauna pulmad",
     "authors" : new Array("Aleksei Turovski"),
@@ -240,7 +240,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Aleksei_Turovski_Fauna_pulmad.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Andri Luup, Marius Peterson, Jaan Tootsen",
-    "pikkus" : "51.24",
+    "pikkus" : "51.24"
     },
     "25":{"title" : "Venelaste identiteet",
     "authors" : new Array("Andres Ehin"),
@@ -250,7 +250,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Andres_Ehin_Venelaste_identiteet.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.27",
+    "pikkus" : "51.27"
     },
     "26":{"title" : "Linna kujunemislugu",
     "authors" : new Array("Dmitri Bruns"),
@@ -260,7 +260,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Dmitri_Bruns_Linna_kujunemislugu.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Anton Gans, Jaan Tootsen",
-    "pikkus" : "51.28",
+    "pikkus" : "51.28"
     },
     "27":{"title" : "JUTUAJAMISI EVALDI JUURES 2 Algtekstid",
     "authors" : new Array("Jaak Johanson"),
@@ -270,7 +270,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Evald_Saag_ja_Marek_Strandberg_Algtekstid.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.33",
+    "pikkus" : "50.33"
     },
     "28":{"title" : "JUTUAJAMISI EVALDI JUURES 1 Kultuur ja elu",
     "authors" : new Array("Evald Saag"),
@@ -280,7 +280,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Evald_Saag_Kultuur_ja_elu.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.34",
+    "pikkus" : "51.34"
     },
     "29":{"title" : "Saarelisus ja saare identiteet",
     "authors" : new Array("Helgi Põllo"),
@@ -290,7 +290,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Helgi_Pollo_ja_Toomas_Kokovkin_Saarelisus_ja_saare_identiteet.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.29",
+    "pikkus" : "51.29"
     },
     "30":{"title" : "Miks inimene läheb katki?",
     "authors" : new Array("Inge Tael"),
@@ -300,7 +300,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2007_Inge_Tael_ja_Jaak_Johanson_Miks_inimene_laheb_katki.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.52",
+    "pikkus" : "51.52"
     },
     "31":{"title" : "Evolutsiooni uus lugu",
     "authors" : new Array("Toomas Trapido"),
@@ -310,7 +310,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Toomas_Trapido_Evolutsiooni_uus_lugu.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.37",
+    "pikkus" : "49.37"
     },
     "32":{"title" : "Kunstipiiride muutumine 20. sajandil",
     "authors" : new Array("Jaak Kangilaski"),
@@ -320,7 +320,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Jaak_Kangilaski_Kunstipiiride_muutumine_20_sajandil.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.23",
+    "pikkus" : "51.23"
     },
     "33":{"title" : "Fermi paradoksist",
     "authors" : new Array("Jaan Kaplinski"),
@@ -330,7 +330,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Jaan_Kaplinski_Fermi_paradoksist.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.30",
+    "pikkus" : "51.30"
     },
     "34":{"title" : "Tundmatu inimene",
     "authors" : new Array("Jaan Tätte"),
@@ -340,7 +340,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Mari_Tarand_ja_Jaan_Tatte_Tundmatu_inimene.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.45",
+    "pikkus" : "51.45"
     },
     "35":{"title" : "Igapäevasest surematusest",
     "authors" : new Array("Jaan-Olle Andressoo"),
@@ -350,7 +350,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Jaanus_Rohumaa_ja_Jaan_Olle_Andressoo_Igapaevasest_surematusest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.20",
+    "pikkus" : "50.20"
     },
     "36":{"title" : "Inemisõigusõ ja mia tuust vällä on tulnu",
     "authors" : new Array("Kaido Kama"),
@@ -360,7 +360,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Kaido_Kama_Inemisoiguso_ja_mia_tuust_valla_on_tulnu.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "45.15",
+    "pikkus" : "45.15"
     },
     "37":{"title" : "Lohe ja neitsi",
     "authors" : new Array("Marek Strandberg"),
@@ -370,7 +370,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Marek_Strandberg_Lohe_ja_neitsi.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.54",
+    "pikkus" : "50.54"
     },
     "38":{"title" : "Kõik on ajalugu. XX sajandi ajalookultuuri arenguid",
     "authors" : new Array("Marek Tamm"),
@@ -380,7 +380,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Marek_Tamm_Koik_on_ajalugu_XX_sajandi_ajalookultuuri_arenguid.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.09",
+    "pikkus" : "49.09"
     },
     "39":{"title" : "Ööülikooli unenägu Väravamäng 2006",
     "authors" : new Array("Jaak Johanson"),
@@ -390,7 +390,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Ooulikooli_unenagu_Varavamang_2006.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.23",
+    "pikkus" : "50.23"
     },
     "40":{"title" : "Inimene ja jooga",
     "authors" : new Array("Ingvar Villido"),
@@ -400,7 +400,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Ingvar_Villido_Inimene_ja_jooga.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.46",
+    "pikkus" : "49.46"
     },
     "41":{"title" : "Inimene kui ime",
     "authors" : new Array("Erkki Truve"),
@@ -410,7 +410,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Erkki_Truve_Inimene_kui_ime.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.30",
+    "pikkus" : "52.30"
     },
     "42":{"title" : "Elu patenteerimisest",
     "authors" : new Array("Alex Lotman"),
@@ -420,7 +420,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Alex_Lotman_Elu_patenteerimisest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.42",
+    "pikkus" : "50.42"
     },
     "43":{"title" : "Mahetoidust",
     "authors" : new Array("Anne Luik"),
@@ -430,7 +430,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Anne_Luik_Mahetoidust.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.44",
+    "pikkus" : "49.44"
     },
     "44":{"title" : "Kuhu lähed, kirjandus?",
     "authors" : new Array("Berk Vaher"),
@@ -440,7 +440,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Jan_Kaus_ja_Berk_Vaher_Kuhu_lahed_kirjandus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.57",
+    "pikkus" : "50.57"
     },
     "45":{"title" : "Ajalugu kui nauding",
     "authors" : new Array("David Vseviov"),
@@ -450,7 +450,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_David_Vseviov_Ajalugu_kui_nauding.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.46",
+    "pikkus" : "52.46"
     },
     "46":{"title" : "Paradoksidest (loeng on võru keeles)",
     "authors" : new Array("Enn Kasak"),
@@ -460,7 +460,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Enn_Kasak_Paradoksidest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.11",
+    "pikkus" : "51.11"
     },
     "48":{"title" : "Miks me ei saa aru, kuidas jutt liigub?",
     "authors" : new Array("Ilmar Raag"),
@@ -470,7 +470,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2006_Ilmar_Raag_Miks_me_ei_saa_aru_kuidas_jutt_liigub.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.08",
+    "pikkus" : "51.08"
     },
     "49":{"title" : "Muinasjuttudest",
     "authors" : new Array("Jaan Kaplinski"),
@@ -480,7 +480,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Jaan_Kaplinski_Muinasjuttudest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.00",
+    "pikkus" : "50.00"
     },
     "50":{"title" : "Kullakontolt õnnekontole",
     "authors" : new Array("Jüri Ehlvest"),
@@ -490,7 +490,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Juri_Ehlvest_Kullakontolt_onnekontole.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "53.29",
+    "pikkus" : "53.29"
     },
     "51":{"title" : "Taju ja liikumine. Kaks teeloleku võimalust",
     "authors" : new Array("Kaia Lehari"),
@@ -500,7 +500,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Kaia_Lehari_Taju_ja_liikumine.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.41",
+    "pikkus" : "50.41"
     },
     "52":{"title" : "Pealisülesanne",
     "authors" : new Array("Marco Laimre"),
@@ -510,7 +510,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Marco_Laimre_Pealisulesanne.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "48.01",
+    "pikkus" : "48.01"
     },
     "53":{"title" : "Ööülikooli unenägu MEIE JUURTE LAULUD",
     "authors" : new Array("Marius Peterson"),
@@ -520,7 +520,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Marius_Peterson_Meie_juurte_laulud.mp3",
     "heli" : "Marius Peterson",
     "toimetaja" : "Marius Peterson",
-    "pikkus" : "53.49",
+    "pikkus" : "53.49"
     },
     "54":{"title" : "Ilu teoloogiast",
     "authors" : new Array("Metropoliit Stefanos"),
@@ -530,7 +530,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Metropoliit_Stefanos_Ilu_teoloogiast.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "47.15",
+    "pikkus" : "47.15"
     },
     "55":{"title" : "Ussaiast",
     "authors" : new Array("Pulga Jaan"),
@@ -540,7 +540,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Pulga_Jaan_Ussaiast.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "47.55",
+    "pikkus" : "47.55"
     },
     "56":{"title" : "Inimene saarel, teel saarele",
     "authors" : new Array("Tõnu Õnnepalu"),
@@ -550,7 +550,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Tonu_Onnepalu_Inimene_saarel_teel_saarele.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.30",
+    "pikkus" : "51.30"
     },
     "57":{"title" : "Ööülikooli unenägu",
     "authors" : new Array("Jaak Johanson,Evald Saag"),
@@ -560,7 +560,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Ooulikooli_unenagu,OY2006_Evald_Saag_ja_Jaak_Johanson_Ooulikooli_unenagu.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "63.10,51.12",
+    "pikkus" : "63.10,51.12"
     },
     "58":{"title" : "Lihtsad asjad",
     "authors" : new Array("Jaak Johanson"),
@@ -570,7 +570,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Jaak_Johanson_jt_Lihtsad_asjad.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.53",
+    "pikkus" : "51.53"
     },
     "59":{"title" : "Visuaalse teatri märgisüsteemist",
     "authors" : new Array("Aleksander Pepeljajev"),
@@ -580,7 +580,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Aleksander_Pepeljajev_Visuaalse_teatri_margisusteemist.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Eero Epner",
-    "pikkus" : "50.12",
+    "pikkus" : "50.12"
     },
     "60":{"title" : "Investeering, krediit ja kindlustus loomariigi majanduses",
     "authors" : new Array("Aleksei Turovski"),
@@ -590,7 +590,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Aleksei_Turovski_Investeering_krediit_ja_kindlustus_loomariigi_majanduses.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.13",
+    "pikkus" : "52.13"
     },
     "61":{"title" : "Mis tunne on olla loll ?",
     "authors" : new Array("Enn Kasak"),
@@ -600,7 +600,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Enn_Kasak_Mis_tunne_on_olla_loll.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.37",
+    "pikkus" : "51.37"
     },
     "62":{"title" : "Vanem rahvalaul",
     "authors" : new Array("Evar Riitsaar"),
@@ -610,7 +610,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Kauksi_Ulle_ja_Riitsaare_Evar_Vanem_rahvalaul.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.36",
+    "pikkus" : "52.36"
     },
     "64":{"title" : "Majanduse ning rahalise väärtusskaala mitmekesistamisest",
     "authors" : new Array("Marek Strandberg"),
@@ -620,7 +620,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Marek_Strandberg_Majanduse_ning_rahalise_vaartusskaala_mitmekesistamisest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "54.00",
+    "pikkus" : "54.00"
     },
     "65":{"title" : "Pealisülesanded",
     "authors" : new Array("Jan Kaus"),
@@ -630,7 +630,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Jan_Kaus_Pealisulesanded.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.53",
+    "pikkus" : "51.53"
     },
     "66":{"title" : "Kas ruum saab olla hea või halb?",
     "authors" : new Array("Isa Philippe Jourdan"),
@@ -640,7 +640,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2005_Isa_Philippe_Jourdan_Kas_ruum_saab_olla_hea_voi_halb.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "48.27",
+    "pikkus" : "48.27"
     },
     "67":{"title" : "Renessanssiaja elutunnetusest",
     "authors" : new Array("Ülar Ploom"),
@@ -650,7 +650,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Ular_Ploom_Renessanssiaja_elutunnetusest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "53.40",
+    "pikkus" : "53.40"
     },
     "68":{"title" : "Indigolapsed",
     "authors" : new Array("Armen Tõugu"),
@@ -660,7 +660,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Armen_Tougu_Indigolapsed.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.09",
+    "pikkus" : "52.09"
     },
     "69":{"title" : "Sünd ja surm; inimene ja kosmos",
     "authors" : new Array("Argo Moor"),
@@ -670,7 +670,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Argo_Moor_Sund_ja_surm_inimene_ja_kosmos.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.23",
+    "pikkus" : "50.23"
     },
     "70":{"title" : "Sürrealismist",
     "authors" : new Array("Andres Ehin"),
@@ -680,7 +680,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Andres_Ehin_ja_Vaino_Vahing_Surrealismist.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.04",
+    "pikkus" : "52.04"
     },
     "71":{"title" : "Mikrokosmose dialoog makrokosmosega – alkeemia zooloogilisest aspektist",
     "authors" : new Array("Aleksei Turovski"),
@@ -690,7 +690,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Aleksei_Turovski_Mikrokosmose_dialoog_makrokosmosega.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.38",
+    "pikkus" : "52.38"
     },
     "72":{"title" : "Universumi mõistmise võimalikkusest",
     "authors" : new Array("Enn Kasak"),
@@ -700,7 +700,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Enn_Kasak_Universumi_moistmise_voimalikkusest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.24",
+    "pikkus" : "51.24"
     },
     "73":{"title" : "Kosmoloogiast teoloogi ja sumeroloogi pilgu läbi",
     "authors" : new Array("Evald Saag"),
@@ -710,7 +710,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Evald_Saag_Kosmoloogiast_teoloogi_ja_sumeroloogi_pilgu_labi.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "47.01",
+    "pikkus" : "47.01"
     },
     "74":{"title" : "Setu keel ja meel",
     "authors" : new Array("Evar Riitsaar"),
@@ -720,7 +720,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Terje_Lillmaa_ja_Evar_Riitsaar_Setu_keel_ja_meel.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.00",
+    "pikkus" : "51.00"
     },
     "75":{"title" : "Kraftwerk meie peas",
     "authors" : new Array("Tõnis Kahu"),
@@ -730,7 +730,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Tonis_Kahu_Andres_Loo_Marko_Laimre_Anders_Harm_ja_Hanno_Soans_Kraftwerk_meie_peas.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.21",
+    "pikkus" : "52.21"
     },
     "76":{"title" : "Ruumi mõiste",
     "authors" : new Array("Rein Raud"),
@@ -740,7 +740,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Rein_Raud_Ruumi_moiste.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.13",
+    "pikkus" : "49.13"
     },
     "77":{"title" : "Inimhääle tekitamise võimalustest",
     "authors" : new Array("Peeter Volkonski"),
@@ -750,7 +750,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Peeter_Volkonski_Inimhaale_tekitamise_voimalustest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.30",
+    "pikkus" : "50.30"
     },
     "78":{"title" : "Isolatsioon ja mõtlemine",
     "authors" : new Array("Peeter Tulviste"),
@@ -760,7 +760,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Peeter_Tulviste_Isolatsioon_ja_motlemine.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.09",
+    "pikkus" : "50.09"
     },
     "79":{"title" : "Turufundamentalism kui religioon",
     "authors" : new Array("Peeter Laurits"),
@@ -770,7 +770,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Peeter_Laurits_Turufundamentalism_kui_religioon.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.35",
+    "pikkus" : "52.35"
     },
     "80":{"title" : "Raha ja modernsus",
     "authors" : new Array("Mikko Lagerspetz"),
@@ -780,7 +780,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Mikko_Lagerspetz_Raha_ja_modernsus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.08",
+    "pikkus" : "49.08"
     },
     "81":{"title" : "Arusaamise vastutus",
     "authors" : new Array("Mihhail Lotman"),
@@ -790,7 +790,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Mihhail_Lotman_Arusaamise_vastutus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "44.00",
+    "pikkus" : "44.00"
     },
     "82":{"title" : "Kihistumine",
     "authors" : new Array("Marju Lauristin"),
@@ -800,7 +800,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Marju_Lauristin_Kihistumine.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "53.15",
+    "pikkus" : "53.15"
     },
     "83":{"title" : "Aeg ja raha",
     "authors" : new Array("Marek Tamm"),
@@ -810,7 +810,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Marek_Tamm_Aeg_ja_raha.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.15",
+    "pikkus" : "51.15"
     },
     "84":{"title" : "Kosmose jutustamine",
     "authors" : new Array("Hasso Krull"),
@@ -820,7 +820,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Hasso_Krull_Kosmose_jutustamine.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.24",
+    "pikkus" : "51.24"
     },
     "85":{"title" : "Fantaasia ja reaalsus Vaino Vahingu loomingus",
     "authors" : new Array("Ingo Normet"),
@@ -830,7 +830,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Peeter_Tulviste_ja_Ingo_Normet_Fantaasia_ja_reaalsus_Vaino_Vahingu_loomingus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.55",
+    "pikkus" : "50.55"
     },
     "86":{"title" : "Jumala leidmine iseendas",
     "authors" : new Array("Ingvar Villido"),
@@ -840,7 +840,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Ingvar_Villido_Jumala_leidmine_iseendas.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "44.57",
+    "pikkus" : "44.57"
     },
     "87":{"title" : "Lapseseisus kui hingeseisund jumaliku ettehoolduse taustal",
     "authors" : new Array("Isa Philippe Jourdan"),
@@ -850,7 +850,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Isa_Philippe_Jourdan_Lapseseisus_kui_hingeseisund_jumaliku_ettehoolduse_taustal.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.35",
+    "pikkus" : "49.35"
     },
     "88":{"title" : "Muhu pärimuskultuurist",
     "authors" : new Array("Kadri Tüür"),
@@ -860,7 +860,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Kadri_Tuur_ja_Martin_Kivisoo_Muhu_parimuskultuurist.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.21",
+    "pikkus" : "49.21"
     },
     "89":{"title" : "Kas kunsti on võimalik õpetada?",
     "authors" : new Array("Kaido Ole"),
@@ -870,7 +870,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Marko_Maetamm_ja_Kaido_Ole_Kas_kunsti_on_voimalik_opetada.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.09",
+    "pikkus" : "50.09"
     },
     "90":{"title" : "Kosmoloogia kui mütoloogia",
     "authors" : new Array("Linnart Mäll"),
@@ -880,7 +880,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2004_Linnart_Mall_Kosmoloogia_kui_mutoloogia.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.10",
+    "pikkus" : "49.10"
     },
     "91":{"title" : "Mõistulugude ja müstikaga ümbritsetud kunst",
     "authors" : new Array("Jüri Ehlvest"),
@@ -890,7 +890,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Juri_Ehlvest_Moistulugude_ja_mustikaga_umbritsetud_kunst.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Urmas Vadi",
-    "pikkus" : "51.23",
+    "pikkus" : "51.23"
     },
     "92":{"title" : "Miks kirjutatakse loodusest?",
     "authors" : new Array("Kadri Tüür"),
@@ -900,7 +900,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Kadri_Tuur_ja_Timo_Maran_Miks_kirjutatakse_loodusest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.14",
+    "pikkus" : "50.14"
     },
     "93":{"title" : "Talve ülistuseks",
     "authors" : new Array("Kaia Lehari"),
@@ -910,7 +910,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Kaia_Lehari_Talve_ulistuseks.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.31",
+    "pikkus" : "49.31"
     },
     "94":{"title" : "Tähed pimedas universumis",
     "authors" : new Array("Laurits Leedjärv"),
@@ -920,7 +920,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Laurits_Leedjarv_Tahed_pimedas_universumis.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "54.14",
+    "pikkus" : "54.14"
     },
     "95":{"title" : "Põhiseadus, tehnoloogia, ökoloogiline majandus",
     "authors" : new Array("Marek Strandberg"),
@@ -930,7 +930,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Marek_Strandberg_Pohiseadus_tehnoloogia_okoloogiline_majandus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "53.45",
+    "pikkus" : "53.45"
     },
     "96":{"title" : "Kuuma universumi singulaarsusest braanimaailma kontseptsioonini",
     "authors" : new Array("Margus Saal"),
@@ -940,7 +940,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Margus_Saal_Kuuma_universumi_singulaarsusest_braanimaailma_kontseptsioonini.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.51",
+    "pikkus" : "49.51"
     },
     "97":{"title" : "Armust ja ei muust",
     "authors" : new Array("Vello Salo"),
@@ -950,7 +950,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Vello_Salo_Armust_ja_ei_muust.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.53",
+    "pikkus" : "50.53"
     },
     "98":{"title" : "Miks me teeme asju, mida meile ei meeldi teha?",
     "authors" : new Array("Jaanus Harro"),
@@ -960,7 +960,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Jaanus_Harro_Miks_me_teeme_asju_mida_meile_ei_meeldi_teha.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.24",
+    "pikkus" : "49.24"
     },
     "99":{"title" : "Muusika ja sõnad",
     "authors" : new Array("Jaan Ross"),
@@ -970,7 +970,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Jaan_Ross_Muusika_ja_sonad.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.20",
+    "pikkus" : "51.20"
     },
     "100":{"title" : "Unelaul, unenägu ja autorikaitse",
     "authors" : new Array("Jaak Johanson"),
@@ -980,7 +980,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Jaak_Johanson_ja_Peeter_Laurits_Unelaul_unenagu_ja_autorikaitse.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.46",
+    "pikkus" : "49.46"
     },
     "101":{"title" : "Eestlaste identiteet ja naaberrahvad",
     "authors" : new Array("Andres Ehin"),
@@ -990,7 +990,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Andres_Ehin_Eestlaste_identiteet_ja_naaberrahvad.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.31",
+    "pikkus" : "49.31"
     },
     "102":{"title" : "Kultuur ja liivakast",
     "authors" : new Array("Anzori Barkalaja"),
@@ -1000,7 +1000,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Anzori_Barkalaja_Kultuur_ja_liivakast.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.35",
+    "pikkus" : "49.35"
     },
     "103":{"title" : "Üksik inimene muutuvas maailmas",
     "authors" : new Array("Argo Moor"),
@@ -1010,7 +1010,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Argo_Moor_Uksik_inimene_muutuvas_maailmas.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.58",
+    "pikkus" : "50.58"
     },
     "104":{"title" : "Sumeri ebajumalatest ja Eesti emadest",
     "authors" : new Array("Evald Saag"),
@@ -1020,7 +1020,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Evald_Saag_Sumeri_ebajumalatest_ja_Eesti_emadest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "47.40",
+    "pikkus" : "47.40"
     },
     "105":{"title" : "Mis on reaalsus?",
     "authors" : new Array("Hasso Krull"),
@@ -1030,7 +1030,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Pulga_Jaan_ja_Hasso_Krull_Mis_on_reaalsus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.24",
+    "pikkus" : "51.24"
     },
     "106":{"title" : "Holokausti kõnetades",
     "authors" : new Array("Hasso Krull"),
@@ -1040,7 +1040,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Hasso_Krull_Holokausti_konetades.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.31",
+    "pikkus" : "50.31"
     },
     "107":{"title" : "Miks meedia läheb lolliks?",
     "authors" : new Array("Ilmar Raag"),
@@ -1050,7 +1050,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2003_Ilmar_Raag_Miks_meedia_laheb_lolliks.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.12",
+    "pikkus" : "52.12"
     },
     "108":{"title" : "Budism – traditsioon ja tänapäev",
     "authors" : new Array("Märt Läänemets"),
@@ -1060,7 +1060,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Mart_Laanemets_Budism_traditsioon_ja_tanapaev.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.48",
+    "pikkus" : "49.48"
     },
     "109":{"title" : "Austraalia aborigeenid ja muinasuni",
     "authors" : new Array("Peeter Laurits"),
@@ -1070,7 +1070,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Peeter_Laurits_Austraalia_aborigeenid_ja_muinasuni.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "48.52",
+    "pikkus" : "48.52"
     },
     "110":{"title" : "Pilt ja Tõde",
     "authors" : new Array("Peeter Linnap"),
@@ -1080,7 +1080,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Peeter_Linnap_Pilt_ja_tode.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "47.01",
+    "pikkus" : "47.01"
     },
     "111":{"title" : "Pildiline Eesti",
     "authors" : new Array("Peeter Linnap"),
@@ -1090,7 +1090,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Peeter_Linnap_Pildiline_Eesti.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.54",
+    "pikkus" : "51.54"
     },
     "112":{"title" : "Psühhedeelne kultuur",
     "authors" : new Array("Tõnis Kahu"),
@@ -1100,7 +1100,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Tonis_Kahu_Psuhhedeelne_kultuur.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.17",
+    "pikkus" : "50.17"
     },
     "113":{"title" : "Poeet ja sulg",
     "authors" : new Array("Ülar Ploom"),
@@ -1110,7 +1110,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Ular_Ploom_Poeet_ja_sulg.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "42.57",
+    "pikkus" : "42.57"
     },
     "114":{"title" : "Ideaalpop – üks suhe popkultuuri",
     "authors" : new Array("Berk Vaher"),
@@ -1120,7 +1120,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Berk_Vaher_Ideaalpop_uks_suhe_popkultuuri.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "53.27",
+    "pikkus" : "53.27"
     },
     "115":{"title" : "Sõna jõud",
     "authors" : new Array("Maria Tilk"),
@@ -1130,7 +1130,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Maria_Tilk_Sona_joud.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.04",
+    "pikkus" : "50.04"
     },
     "116":{"title" : "Elu psühhosoikumis",
     "authors" : new Array("Marek Strandberg"),
@@ -1140,7 +1140,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Marek_Strandberg_Elu_psuhhosoikumis.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.22",
+    "pikkus" : "52.22"
     },
     "117":{"title" : "Demokraatia hiilgus ja viletsus",
     "authors" : new Array("Kaido Kama"),
@@ -1150,7 +1150,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Kaido_Kama_Demokraatia_hiilgus_ja_viletsus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "48.54",
+    "pikkus" : "48.54"
     },
     "118":{"title" : "Inimeste maailm",
     "authors" : new Array("Evald Saag"),
@@ -1160,7 +1160,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Evald_Saag_Inimeste_maailm.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "47.54",
+    "pikkus" : "47.54"
     },
     "119":{"title" : "Eestiaegsed suurmehed",
     "authors" : new Array("Evald Saag"),
@@ -1170,7 +1170,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Evald_Saag_Eestiaegsed_suurmehed.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "53.03",
+    "pikkus" : "53.03"
     },
     "120":{"title" : "Algteadmised joogast",
     "authors" : new Array("Holger Oidjärv"),
@@ -1180,7 +1180,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Holger_Oidjarv_Algteadmised_joogast.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.24",
+    "pikkus" : "50.24"
     },
     "121":{"title" : "Esimene maailmasõda ja intellektuaalid",
     "authors" : new Array("Jaan Kaplinski"),
@@ -1190,7 +1190,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Jaan_Kaplinski_Esimene_maailmasoda_ja_intellektuaalid.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.36",
+    "pikkus" : "50.36"
     },
     "122":{"title" : "Religioon ja sektantlus",
     "authors" : new Array("Jaan Kaplinski"),
@@ -1200,7 +1200,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Jaan_Kaplinski_Religioon_ja_sektantlus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.31",
+    "pikkus" : "52.31"
     },
     "123":{"title" : "Laps ja maailm",
     "authors" : new Array("Ülo Vooglaid"),
@@ -1210,7 +1210,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2002_Ulo_Vooglaid_Laps_ja_maailm.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.29",
+    "pikkus" : "51.29"
     },
     "124":{"title" : "Looduse põhirütmid",
     "authors" : new Array("Maria Tilk"),
@@ -1220,7 +1220,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Maria_Tilk_Looduse_pohirutmid.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "48.43",
+    "pikkus" : "48.43"
     },
     "125":{"title" : "Müüdid meedias",
     "authors" : new Array("Marju Lauristin"),
@@ -1230,7 +1230,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Marju_Lauristin_Muudid_meedias.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.07",
+    "pikkus" : "50.07"
     },
     "126":{"title" : "Postmoderne maakunst",
     "authors" : new Array("Peeter Laurits"),
@@ -1240,7 +1240,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Peeter_Laurits_Postmoderne_maakunst.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "48.53",
+    "pikkus" : "48.53"
     },
     "127":{"title" : "Kultuurteksti mõiste",
     "authors" : new Array("Peeter Torop"),
@@ -1250,7 +1250,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Peeter_Torop_Kultuurteksti_moiste.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.48",
+    "pikkus" : "49.48"
     },
     "128":{"title" : "Inimese mõõde Anton Tšehhovi loomingus",
     "authors" : new Array("Reet Neimar"),
@@ -1260,7 +1260,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Reet_Neimar_Inimese_moode_A_Tsehhovi_loomingus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "54.05",
+    "pikkus" : "54.05"
     },
     "129":{"title" : "Milleks meile Tšehhov?",
     "authors" : new Array("Reet Neimar"),
@@ -1270,7 +1270,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Reet_Neimar_Milleks_meile_Tsehhov.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.03",
+    "pikkus" : "51.03"
     },
     "130":{"title" : "Raha ja jumala semiootilistest seostest",
     "authors" : new Array("Riho Saard"),
@@ -1280,7 +1280,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Riho_Saard_Raha_ja_jumala_semiootilistest_seostest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "51.40",
+    "pikkus" : "51.40"
     },
     "131":{"title" : "Ürginimene meis",
     "authors" : new Array("Linnar Priimägi"),
@@ -1290,7 +1290,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Linnar_Priimagi_Urginimene_meis.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.26",
+    "pikkus" : "52.26"
     },
     "132":{"title" : "Läbi neljanda seina",
     "authors" : new Array("Jaanus Rohumaa"),
@@ -1300,7 +1300,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Jaanus_Rohumaa_Labi_neljanda_seina.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.37",
+    "pikkus" : "49.37"
     },
     "133":{"title" : "Narkootilised ained traditsionaalkultuurides",
     "authors" : new Array("Argo Moor"),
@@ -1310,7 +1310,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Argo_Moor_Narkootilised_ained_traditsionaalkultuurides.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "54.05",
+    "pikkus" : "54.05"
     },
     "134":{"title" : "Milleks metodoloogia?",
     "authors" : new Array("Ülo Vooglaid"),
@@ -1320,7 +1320,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Ulo_Vooglaid_Milleks_metodoloogia.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "50.55",
+    "pikkus" : "50.55"
     },
     "135":{"title" : "Egoism ja altruism",
     "authors" : new Array("Andres Luure"),
@@ -1330,7 +1330,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Andres Luure_ja_Margus_Magi_Egoism_ja_altruism.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Aleksander VÃ¤ljamÃ¤e",
-    "pikkus" : "56.43",
+    "pikkus" : "56.43"
     },
     "136":{"title" : "Šamanism kui informatsiooni kujundamine",
     "authors" : new Array("Anzori Barkalaja"),
@@ -1340,7 +1340,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Anzori_Barkalaja_Shamanism_kui_informatsiooni_kujundamine.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "49.43",
+    "pikkus" : "49.43"
     },
     "137":{"title" : "Mõtlemisest",
     "authors" : new Array("Gunnar Aarma"),
@@ -1350,7 +1350,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Gunnar_Aarma_Motlemisest.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.12",
+    "pikkus" : "52.12"
     },
     "138":{"title" : "Narratiiviajastu",
     "authors" : new Array("Ilmar Raag"),
@@ -1360,7 +1360,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Ilmar_Raag_Narratiiviajastu.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "45.12",
+    "pikkus" : "45.12"
     },
     "139":{"title" : "Meister ja Margarita",
     "authors" : new Array("Irina Belobrovtseva"),
@@ -1370,7 +1370,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2001_Irina_Belobrovtseva_Meister_ja_Margarita.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "48.08",
+    "pikkus" : "48.08"
     },
     "140":{"title" : "Uku Masingu elusamus. Jaan Tootseni bakalaureusetöö aastal 2000",
     "authors" : new Array("Evald Saag"),
@@ -1380,7 +1380,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2000_Evald_Saag_Peep_Audova_Vello_Salum_Uku_Masingu_elusamus.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "54.04",
+    "pikkus" : "54.04"
     },
     "141":{"title" : "Vaikus kui loodusvara",
     "authors" : new Array("Fred Jüssi"),
@@ -1390,7 +1390,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2000_Fred_Jussi_Vaikus_kui_loodusvara.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Taisto Uuslail ja Jaan Tootsen",
-    "pikkus" : "49.45",
+    "pikkus" : "49.45"
     },
     "142":{"title" : "Teistmoodi muusika",
     "authors" : new Array("Lepo Sumera"),
@@ -1400,7 +1400,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2000_Lepo_Sumera_Teistmoodi_muusika.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen ja Taisto Uuslail",
-    "pikkus" : "56.54",
+    "pikkus" : "56.54"
     },
     "143":{"title" : "Kaunid kunstid kui võimalus põgeneda reaalsusest?",
     "authors" : new Array("Mark Soosaar"),
@@ -1410,7 +1410,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2000_Mark_Soosaar_Kaunid_kunstid_kui_voimalus_pogeneda_reaalsusest_.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "55.22",
+    "pikkus" : "55.22"
     },
     "144":{"title" : "Aja mõiste idas ja läänes",
     "authors" : new Array("Rein Raud"),
@@ -1420,7 +1420,7 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2000_Rein_Raud_Aja_moiste_idas_ja_laanes.mp3",
     "heli" : "Jüri Muttika, Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "46.37",
+    "pikkus" : "46.37"
     },
     "145":{"title" : "Eneseleidmine religioonipsühholoogilisest vaatenurgast",
     "authors" : new Array("Tõnu Lehtsaar"),
@@ -1430,6 +1430,12 @@ db = {
     "source" : "http://heli.er.ee/helid/oy/OY2000_Tonu_Lehtsaar_Eneseleidmine_religioonipsuhholoogilisest_vaatenurgast.mp3",
     "heli" : "Külli Tüli",
     "toimetaja" : "Jaan Tootsen",
-    "pikkus" : "52.22",
+    "pikkus" : "52.22"
     }
-}
+};
+
+// convert our data to Array of objects
+Object.keys(data).forEach(function(key, index) {
+   data[key].index = index;
+   db.push(data[key]);
+});
