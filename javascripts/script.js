@@ -2,6 +2,20 @@
 
 $(document).ready(function() { 
     
+    // Toggle day and night
+    $('#onOff').click(function(){
+        $('body').toggleClass('black');
+        
+        if($('#onOffIcon').hasClass('glyphicon-star')) {
+            $('#onOffIcon').removeClass('glyphicon-star');
+            $('#onOffIcon').addClass('glyphicon-star-empty');
+        } else {
+            $('#onOffIcon').removeClass('glyphicon-star-empty');
+            $('#onOffIcon').addClass('glyphicon-star');        
+        }
+    
+    });
+    
 });
 
 
