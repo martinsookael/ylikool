@@ -123,6 +123,10 @@ p {
     display: none;
 }
 
+.gray {
+    color: #999;
+}
+
 @media all and (min-width:500px) {
   #forkMe {
     display: inline;

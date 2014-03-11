@@ -22,7 +22,7 @@
    data-ng-repeat="lecture in filteredLectures = (db | searchFilter:searchText | orderBy:'year')">
     <a href="#loeng/{{lecture.index}}">
         <span data-ng-repeat="author in lecture.authors">
-        <span style="color: #999;">{{lecture.year}}</span> {{author}}{{$last ? '' : ', '}}
+        <span class="gray">{{lecture.year}}</span> {{author}}{{$last ? '' : ', '}}
         </span>
         -
         {{lecture.title}}
