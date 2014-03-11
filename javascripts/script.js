@@ -67,6 +67,9 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
                 if (lecture.title.search(regexp) > -1) {
                     found = true;
                 }
+                if (lecture.tag.search(regexp) > -1) {
+                    found = true;
+                }
                 if (!found) {
                     lecture.authors.some(function(author) {
                         found = author.search(regexp) > -1;
