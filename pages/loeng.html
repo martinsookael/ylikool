@@ -13,16 +13,16 @@
                 
                 <p id="playerContainer">
                 <audio id="player" style="width: 100%;" conrols="controls" >
-                    <source ng-src="{{source}}"  type="audio/mp3"  />
+                    <source ng-src="{{fileUrl}}"  type="audio/mp3"  />
                 </audio>
                 </p>
                 
                 <p id="text" >
                     {{text}} <br />
-                    Heli: {{heli}} <br />
-                    Toimetaja: {{toimetaja}} <br />
-                    Salvestatud: {{date}}<br />
-                    <a href="{{source}}">Laadi alla mp3</a><br />
+                    Heli: {{sound}} <br />
+                    Toimetaja: {{editor}} <br />
+                    Salvestatud: {{year}}<br />
+                    <a href="http://heli.er.ee/helid/oy/{{file}}.mp3">Laadi alla mp3</a> / <a href="http://heli.er.ee/helid/ram/{{file}}.ram"> ram</a><br />
                 </p>
 
 

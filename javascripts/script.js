@@ -87,13 +87,13 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
         var data = db[nid];
         $scope.title = data.title;
         $scope.tag = data.tag;
-        $scope.source = data.source;
+        $scope.file = data.file;
+        $scope.fileUrl = "http://heli.er.ee/helid/oy/"+data.file+".mp3";
         $scope.text = data.text;
-        $scope.date = data.date;
+        $scope.year = data.year;
         $scope.authors = data.authors;   
-        $scope.heli = data.heli;   
-        $scope.toimetaja = data.toimetaja;   
-        $scope.shortSource = data.shortSource; 
+        $scope.sound = data.sound;   
+        $scope.editor = data.editor;   
         $scope.nid = nid; 
     })
 
