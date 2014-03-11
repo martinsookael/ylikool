@@ -10,7 +10,8 @@ function cl(data) {
     console.log(data);
 }
 
-var scotchApp = angular.module('scotchApp', ['ngRoute']);
+var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
+//var scotchApp = angular.module('scotchApp', ['ui.unique']);
 
     scotchApp.config(function($sceDelegateProvider) {
         $sceDelegateProvider.resourceUrlWhitelist([
@@ -42,6 +43,11 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
             .when('/esinejad', {
 				templateUrl : 'pages/esinejad.html',
+				controller  : 'otsiController'
+			})
+
+            .when('/teemad', {
+				templateUrl : 'pages/teemad.html',
 				controller  : 'otsiController'
 			})
         
