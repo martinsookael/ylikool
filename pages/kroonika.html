@@ -1,7 +1,7 @@
 <ul class="nav nav-tabs nav-justified" id="valiOtsing">
-  <li class="active"><a >Loengud</a></li>
+  <li><a href="#otsi">Loengud</a></li>
 <!--  <li><a href="#esinejad">Esinejad</a></li>-->
-  <li><a href="#kroonika">Kroonika</a></li>
+  <li class="active"><a href="#kroonika">Kroonika</a></li>
   <li><a href="#teemad">Teemad</a></li>
 </ul>
 
@@ -19,10 +19,10 @@
     Tulemusi ei leitud...
 </p>
 <p class="authors"
-   data-ng-repeat="lecture in filteredLectures = (db | searchFilter:searchText | orderBy:'authors[0]')">
+   data-ng-repeat="lecture in filteredLectures = (db | searchFilter:searchText | orderBy:'year')">
     <a href="#loeng/{{lecture.index}}">
         <span data-ng-repeat="author in lecture.authors">
-        {{author}}{{$last ? '' : ', '}}
+        <span style="color: #999;">{{lecture.year}}</span> {{author}}{{$last ? '' : ', '}}
         </span>
         -
         {{lecture.title}}

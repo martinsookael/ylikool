@@ -51,6 +51,11 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
 				controller  : 'otsiController'
 			})
 
+            .when('/kroonika', {
+				templateUrl : 'pages/kroonika.html',
+				controller  : 'otsiController'
+			})
+        
             .when('/teema/:tag', {
 				templateUrl : 'pages/teema.html',
 				controller  : 'tagController'
