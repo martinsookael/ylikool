@@ -50,6 +50,11 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
 				templateUrl : 'pages/teemad.html',
 				controller  : 'otsiController'
 			})
+
+            .when('/teema/:tag', {
+				templateUrl : 'pages/teema.html',
+				controller  : 'tagController'
+			})        
         
             .when('/loeng/:name', { 
                 templateUrl: 'pages/loeng.html', 
@@ -90,8 +95,13 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         $scope.db = db;        
     });
 
+    scotchApp.controller('tagController', function($scope, $route, $routeParams) {
+        $scope.tag = $routeParams.tag; console.log($scope.tag);
+        $scope.searchText = $scope.tag;
+        $scope.db = db;        
+    })
+
     scotchApp.controller('CMSController', function($scope, $route, $routeParams) {
-        $scope.message = 'JOU. '+$routeParams.name;
         var nid = $routeParams.name;
         var data = db[nid];
         $scope.title = data.title;

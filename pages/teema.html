@@ -1,5 +1,5 @@
 <ul class="nav nav-tabs nav-justified" id="valiOtsing">
-  <li><a href="#otsi" >Loengud</a></li>
+  <li ><a >Loengud</a></li>
 <!--  <li><a href="#esinejad">Esinejad</a></li>-->
 <!--  <li><a href="#kronoloogia">Kronoloogia</a></li>-->
   <li class="active"><a href="#teemad">Teemad</a></li>
@@ -7,27 +7,13 @@
 
 <form id="otsiNupp">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Otsi..." data-ng-model="searchText" name="otsing" id="otsi" >
+      <input type="text" class="form-control" placeholder="Otsi..." data-ng-model="searchText" name="otsing" id="otsi" value="{{tag}}" >
       <span class="input-group-addon">
         <span id="searchIcon" class="glyphicon glyphicon-search"></span>
         </span>
     </div>
 </form>
 
-
-<h1>Vali teema</h1>
-<p data-ng-show="db.length > 0 && filteredLectures.length <= 0">
-    Tulemusi ei leitud...
-</p>
-<p class="authors"
-   data-ng-repeat="lecture in filteredLectures = (db | searchFilter:searchText | orderBy:'tag' | unique:'tag')">
-    <a href="#teema/{{lecture.tag}}">
-        {{lecture.tag}}
-    </a>
-</p>
-
-
-<!--
 <h1>Vali loeng</h1>
 <p data-ng-show="db.length > 0 && filteredLectures.length <= 0">
     Tulemusi ei leitud...
@@ -42,4 +28,3 @@
         {{lecture.title}}
     </a>
 </p>
--->
