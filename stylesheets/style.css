@@ -127,12 +127,17 @@ p {
     color: #999;
 }
 
+#onOffIcon {
+    color: #000;
+}
+
 body.black {
     background: #000;
     color: #fff;
 }
 
 body.black>#middle>#top>#logo,
+body.black>#middle>#top>#onOff>span,
 body.black>#middle>#main>div>p.authors>a>span,
 body.black>#middle>#main>div>p.author,
 body.black>#middle>#main>div>p#title{
