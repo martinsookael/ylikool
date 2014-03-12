@@ -1,7 +1,7 @@
     // JavaScript Document
 
 $(document).ready(function() { 
-
+    
     // Toggle day and night    
     $('#switch').click(function(){
         $('body').toggleClass('black');
@@ -135,7 +135,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
     });
 
     scotchApp.controller('tagController', function($scope, $route, $routeParams) {
-        $scope.tag = $routeParams.tag; console.log($scope.tag);
+        $scope.tag = $routeParams.tag; 
         $scope.searchText = $scope.tag;
         $scope.db = db;        
     });

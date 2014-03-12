@@ -74,6 +74,14 @@ p {
     line-height: 1.2;
 }
 
+h1 {
+    margin-bottom: 15px;
+}
+
+h1.related {
+    margin-top: 0;
+}
+
 .album-cover {
     display: none;
 }
@@ -88,16 +96,17 @@ p {
 }
 
 #facebook {
-    float: left;
+    float: right;
+    margin-top: -90px;
 }
 
 #twitter {
-    float: left;
-    margin-left: 100px;
+    float: right;
+    margin-top: -60px;
+    width: 75px;
 }
 
 .fb-comments {
-    margin-top: 15px;
 }
 
 #nid {
@@ -154,14 +163,6 @@ body.black>#middle>#main>div>ul>li.active>a {
 a#switch {
     text-decoration: none;
 }
-
-
-/*
-body.white {
-    background: #fff;
-    color: #000;
-}*/
-
 
 @media all and (min-width:500px) {
   #forkMe {
