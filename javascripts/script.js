@@ -25,6 +25,7 @@ function cl(data) {
 }
 
 var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
+
 //var scotchApp = angular.module('scotchApp', ['ui.unique']);
 
     scotchApp.config(function($sceDelegateProvider) {
@@ -77,7 +78,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         
             .when('/loeng/:name', { 
                 templateUrl: 'pages/loeng.html', 
-                controller: 'CMSController' 
+                controller: 'CMSController'
             })
     });
 
@@ -118,7 +119,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         $scope.tag = $routeParams.tag; console.log($scope.tag);
         $scope.searchText = $scope.tag;
         $scope.db = db;        
-    })
+    });
 
     scotchApp.controller('CMSController', function($scope, $route, $routeParams) {
         var nid = $routeParams.name;
@@ -133,6 +134,19 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         $scope.sound = data.sound;   
         $scope.editor = data.editor;   
         $scope.nid = nid; 
-    })
+    });
+
+    scotchApp.directive('socialPlugins', ['$timeout', function ($timeout) {
+        return {
+            restrict: 'A',
+            scope: false,
+            templateUrl: 'pages/social-plugins.html',
+            link: function(scope, element, attributes) {
+                $timeout(function () {
+                    FB.XFBML.parse(element.parent()[0])
+                });
+            }
+        }
+    }]);
 
 
