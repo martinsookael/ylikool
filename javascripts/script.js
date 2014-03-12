@@ -54,22 +54,27 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
 
             .when('/esinejad', {
 				templateUrl : 'pages/esinejad.html',
-				controller  : 'otsiController'
+				controller  : 'authorController'
 			})
 
+            .when('/esineja/:esineja', {
+				templateUrl : 'pages/esineja.html',
+				controller  : 'esinejaController'
+			})        
+        
             .when('/teemad', {
 				templateUrl : 'pages/teemad.html',
-				controller  : 'otsiController'
-			})
-
-            .when('/kroonika', {
-				templateUrl : 'pages/kroonika.html',
 				controller  : 'otsiController'
 			})
         
             .when('/teema/:tag', {
 				templateUrl : 'pages/teema.html',
 				controller  : 'tagController'
+			})        
+
+            .when('/kroonika', {
+				templateUrl : 'pages/kroonika.html',
+				controller  : 'otsiController'
 			})        
         
             .when('/loeng/:name', { 
@@ -126,7 +131,6 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         };
     });
 
-
 	scotchApp.controller('mainController', function($scope) {
     });
 
@@ -134,9 +138,30 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         $scope.db = db;        
     });
 
+    scotchApp.controller('authorController', function($scope) {
+        
+        // get only single authors from db
+        var singleAuthors = [];
+        db.forEach(function(entry) {
+            var authors = entry.authors.toString().split(", ");
+            authors.forEach(function(author){
+                if(singleAuthors.indexOf(author)===-1) {
+                    singleAuthors.push(author);
+                }
+            });
+        });
+        $scope.singleAuthors = singleAuthors.sort();
+    });
+
     scotchApp.controller('tagController', function($scope, $route, $routeParams) {
         $scope.tag = $routeParams.tag; 
         $scope.searchText = $scope.tag;
+        $scope.db = db;        
+    });
+
+    scotchApp.controller('esinejaController', function($scope, $route, $routeParams) {
+        $scope.esineja = $routeParams.esineja; 
+        $scope.searchText = $scope.esineja;
         $scope.db = db;        
     });
 

@@ -1,55 +1,23 @@
-        <script>
-            $(document).ready(function() { 
-            
-                // a quick search!
-                $("#otsi").keyup(function(){ 
-                    
-                    // Retrieve the input field text and reset the count to zero
-                    var filter = $(this).val(), count = 0;
-                    
-                    // Loop through the comment list
-                    $(".authors").each(function(){
-                        
-                        // If the list item does not contain the text phrase fade it out
-                        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-                            $(this).fadeOut();
-                            
-                            // Show the list item if the phrase matches and increase the count by 1
-                        } else {
-                            $(this).show();
-                            count++;
-                        }
-                    });
-                });    
-                
-            });
-        </script>
+<ul class="nav nav-tabs nav-justified" id="valiOtsing">
+  <li><a href="#otsi" >Loengud</a></li>
+  <li class="active"><a href="#esinejad">Esinejad</a></li>
+  <li><a href="#kroonika">Kroonika</a></li>
+  <li><a href="#teemad">Teemad</a></li>
+</ul>
 
-        <ul class="nav nav-tabs nav-justified" id="valiOtsing">
-          <li><a>Loengud</a></li>
-          <li class="active"><a >Esinejad</a></li>
-          <li><a >Teemad</a></li>
-        </ul>
+<form id="otsiNupp">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Otsi..." data-ng-model="searchText" name="otsing" id="otsi" >
+      <span class="input-group-addon">
+        <span id="searchIcon" class="glyphicon glyphicon-search"></span>
+        </span>
+    </div>
+</form>
 
+<h1>Vali esineja</h1>
 
-        <form id="otsiNupp">
-            <div class="input-group">
-              <input type="text" class="form-control" name="otsing" id="otsi" >
-              <span class="input-group-addon">
-                <span id="searchIcon" class="glyphicon glyphicon-search"></span>
-                </span>
-            </div>
-        </form>
-
-		<h1>Vali õppejõud</h1>
-
-        <p class="authors" ng-repeat="(key, value) in db ">
-            <a href=single.html#/loeng/{{key}}>
-                {{value.authors}}
-                <!---<span ng-repeat="author in value.authors">
-                {{author}}{{$last ? '' : ', '}}
-                </span>
-                
-                {{value.title}}-->
-            </a>
-        </p>
+<p class="authors" ng-repeat="single in singleAuthors">
+    <a href="#esineja/{{single}}">
+        {{single}}
+    </a>
+</p>

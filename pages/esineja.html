@@ -1,13 +1,13 @@
 <ul class="nav nav-tabs nav-justified" id="valiOtsing">
-  <li class="active"><a >Loengud</a></li>
-  <li><a href="#esinejad">Esinejad</a></li>
+  <li ><a href="#otsi">Loengud</a></li>
+  <li class="active"><a href="#esinejad">Esinejad</a></li>
   <li><a href="#kroonika">Kroonika</a></li>
   <li><a href="#teemad">Teemad</a></li>
 </ul>
 
 <form id="otsiNupp">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Otsi..." data-ng-model="searchText" name="otsing" id="otsi" >
+      <input type="text" class="form-control" placeholder="Otsi..." data-ng-model="searchText" name="otsing" id="otsi" value="{{tag}}" >
       <span class="input-group-addon">
         <span id="searchIcon" class="glyphicon glyphicon-search"></span>
         </span>
