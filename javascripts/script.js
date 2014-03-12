@@ -1,21 +1,17 @@
     // JavaScript Document
 
 $(document).ready(function() { 
-    
-    // Toggle day and night
-    $('#onOff').click(function(){
+
+    // Toggle day and night    
+    $('#switch').click(function(){
         $('body').toggleClass('black');
-        
-        if($('#onOffIcon').hasClass('glyphicon-star')) {
-            $('#onOffIcon').removeClass('glyphicon-star');
-            $('#onOffIcon').addClass('glyphicon-star-empty');
+        if($('#switchIs').attr('src')==='images/switch1.png') {
+            $('#switchIs').attr('src','images/switch2.png');
         } else {
-            $('#onOffIcon').removeClass('glyphicon-star-empty');
-            $('#onOffIcon').addClass('glyphicon-star');        
+            $('#switchIs').attr('src','images/switch1.png');            
         }
-    
-    });
-    
+        return false;
+    });    
 });
 
 
