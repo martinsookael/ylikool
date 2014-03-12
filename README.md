@@ -17,7 +17,7 @@ Suur aitäh senistele kaasaaitajatele.
   
 Koodiga on panustanud:  
 Henrik Peinar - https://github.com/hpeinar  
+Janar Palk - https://github.com/chanar  
   
 Kaasa on aidanud mõelda:  
-Janar Palk - https://github.com/chanar  
 Martin Verrev -  https://github.com/martinve
