@@ -19,7 +19,7 @@
     Tulemusi ei leitud...
 </p>
 <p class="authors"
-   data-ng-repeat="lecture in filteredLectures = (db | searchFilter:searchText | orderBy:'year')">
+   data-ng-repeat="lecture in filteredLectures = (db | searchFilter:searchText | orderBy:'year':true )">
     <a href="#loeng/{{lecture.index}}">
         <span data-ng-repeat="author in lecture.authors">
         <span class="gray">{{lecture.year}}</span> {{author}}{{$last ? '' : ', '}}
