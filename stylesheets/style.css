@@ -150,6 +150,9 @@ body.black>#middle>#main>div>ul>li.active>a {
     color: #fff;
 }
 
+a#switch {
+    text-decoration: none;
+}
 
 
 /*
