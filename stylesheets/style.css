@@ -140,7 +140,8 @@ body.black>#middle>#top>#logo,
 body.black>#middle>#top>#onOff>span,
 body.black>#middle>#main>div>p.authors>a>span,
 body.black>#middle>#main>div>p.author,
-body.black>#middle>#main>div>p#title{
+body.black>#middle>#main>div>p#title,
+body.black>#middle>#main>div>div>p>a>span {
     color: #fff;
 }
 

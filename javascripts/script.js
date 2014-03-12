@@ -104,6 +104,29 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
     });
 
 
+    scotchApp.filter('relatedFilter', function() {
+        return function(lectures, searchText) {
+
+            var regexp = new RegExp(searchText, 'i');
+            return lectures.filter(function(lecture) {
+                var found = false;
+                //!TODO: Add whatever other fields need to be searched
+                if (lecture.tag.search(regexp) > -1) {
+                    found = true;
+                }
+                if (!found) {
+                    lecture.authors.some(function(author) {
+                        found = author.search(regexp) > -1;
+                        return found;
+                    });
+                }
+
+                return found;
+            });
+        };
+    });
+
+
 	scotchApp.controller('mainController', function($scope) {
     });
 
@@ -130,6 +153,9 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         $scope.sound = data.sound;   
         $scope.editor = data.editor;   
         $scope.nid = nid; 
+        
+        $scope.db = db;   
+
     });
 
     scotchApp.directive('socialPlugins', ['$timeout', function ($timeout) {
