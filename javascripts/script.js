@@ -1,7 +1,7 @@
     // JavaScript Document
 
 $(document).ready(function() { 
-    
+
     // Toggle day and night    
     $('#switch').click(function(){
         $('body').toggleClass('black');
