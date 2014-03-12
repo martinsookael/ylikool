@@ -151,7 +151,8 @@ body.black>#middle>#main>div>p.authors>a>span,
 body.black>#middle>#main>div>p.author,
 body.black>#middle>#main>div>p#title,
 body.black>#middle>#main>div>div>p>a>span,
-body.black>#middle>#main>div>div>h1 {
+body.black>#middle>#main>div>div>h1,
+body.black>#middle>#main>div>h1{
     color: #fff;
 }
 
