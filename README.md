@@ -21,7 +21,7 @@ Janar Palk - https://github.com/chanar
   
 Kaasa on aidanud mõelda:  
 Martin Verrev -  https://github.com/martinve
-
+Indrek Vainu - https://github.com/vainu
 
 Öö ja päeva nupud on pärit siit:
 http://design.tutsplus.com/tutorials/stylish-switch-button--vector-5298
