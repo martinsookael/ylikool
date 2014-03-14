@@ -131,6 +131,13 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         };
     });
 
+    scotchApp.run(function($rootScope, $templateCache) {
+       $rootScope.$on('$viewContentLoaded', function() {
+          $templateCache.removeAll();
+       });
+    });
+
+
 	scotchApp.controller('mainController', function($scope) {
     });
 
