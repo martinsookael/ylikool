@@ -10,11 +10,11 @@ p {
 }
 
 #middle {
-    max-width: 550px; 
-    width: 100%; 
+    max-width: 550px;
+    width: 100%;
     min-width: 320px;
-    height: 100%; 
-    margin-left: auto; 
+    height: 100%;
+    margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -54,7 +54,7 @@ p {
 
 .author, .authors {
     color: #000;
-    font-size: 150%;    
+    font-size: 150%;
     margin-bottom: 0px;
     font-weight: 300;
 }
@@ -67,7 +67,7 @@ p {
 
 #title, h1 {
     color: #000;
-    font-size: 300%;    
+    font-size: 300%;
     margin-bottom: 0px;
     font-weight: bold;
     margin-top: 0px;
@@ -127,7 +127,7 @@ h1.related {
 
 #forkMe {
     position:fixed;
-    right: 0;
+    left: 0;
     bottom: 0;
     display: none;
 }
@@ -166,9 +166,8 @@ a#switch {
     text-decoration: none;
 }
 
-@media all and (min-width:500px) {
+@media all and (min-width:800px) {
   #forkMe {
     display: inline;
   }
 }
-
