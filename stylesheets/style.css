@@ -37,6 +37,7 @@ p {
     float: none;
     font-size: 22pt;
     position: relative;
+    padding-left: 14px;
     top: 5px;
     color: #000;
     font-weight: bold;
@@ -163,7 +164,10 @@ body.black>#middle>#main>div>ul>li.active>a {
 }
 
 a#switch {
+    margin-top: 15px;
     text-decoration: none;
+    color: #999;
+    width: 28px;
 }
 
 @media all and (min-width:800px) {
