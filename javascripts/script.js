@@ -2,15 +2,13 @@
 
 $(document).ready(function() {
 
-    $('body').toggleClass('black');
-
     // Toggle day and night
     $('#switch').click(function(){
-        $('body').toggleClass('black');
-        if($('#switchIs').attr('src')==='images/switch1.png') {
-            $('#switchIs').attr('src','images/switch2.png');
+        $('#switch-icon').toggleClass('fa-moon-o fa-sun-o');
+        if($('#switch-icon').hasClass('fa-moon-o')) {
+            $('body').removeClass('black');
         } else {
-            $('#switchIs').attr('src','images/switch1.png');
+            $('body').addClass('black');
         }
         return false;
     });
