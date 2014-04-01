@@ -2,6 +2,8 @@
 
 $(document).ready(function() {
 
+    $('body').toggleClass('black');
+
     // Toggle day and night
     $('#switch').click(function(){
         $('body').toggleClass('black');
