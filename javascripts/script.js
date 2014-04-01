@@ -1,17 +1,17 @@
     // JavaScript Document
 
-$(document).ready(function() { 
+$(document).ready(function() {
 
-    // Toggle day and night    
+    // Toggle day and night
     $('#switch').click(function(){
         $('body').toggleClass('black');
         if($('#switchIs').attr('src')==='images/switch1.png') {
             $('#switchIs').attr('src','images/switch2.png');
         } else {
-            $('#switchIs').attr('src','images/switch1.png');            
+            $('#switchIs').attr('src','images/switch1.png');
         }
         return false;
-    });    
+    });
 });
 
 
@@ -30,7 +30,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         'self',
         // Allow loading from our assets domain.  Notice the difference between * and **.
         'http://heli.er.ee/helid/oy/**']);
-        
+
         // The blacklist overrides the whitelist so the open redirect here is blocked.
         $sceDelegateProvider.resourceUrlBlacklist([
         'http://myapp.example.com/clickThru**']);
@@ -43,7 +43,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
 
 			// route for the home page
 			.when('/', {
-				templateUrl : 'pages/otsi.html',
+				templateUrl : 'pages/kroonika.html',
 				controller  : 'otsiController'
 			})
 
@@ -60,25 +60,25 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
             .when('/esineja/:esineja', {
 				templateUrl : 'pages/esineja.html',
 				controller  : 'esinejaController'
-			})        
-        
+			})
+
             .when('/teemad', {
 				templateUrl : 'pages/teemad.html',
 				controller  : 'otsiController'
 			})
-        
+
             .when('/teema/:tag', {
 				templateUrl : 'pages/teema.html',
 				controller  : 'tagController'
-			})        
+			})
 
             .when('/kroonika', {
 				templateUrl : 'pages/kroonika.html',
 				controller  : 'otsiController'
-			})        
-        
-            .when('/loeng/:name', { 
-                templateUrl: 'pages/loeng.html', 
+			})
+
+            .when('/loeng/:name', {
+                templateUrl: 'pages/loeng.html',
                 controller: 'CMSController'
             })
     });
@@ -142,11 +142,11 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
     });
 
     scotchApp.controller('otsiController', function($scope) {
-        $scope.db = db;        
+        $scope.db = db;
     });
 
     scotchApp.controller('authorController', function($scope) {
-        
+
         // get only single authors from db
         var singleAuthors = [];
         db.forEach(function(entry) {
@@ -161,15 +161,15 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
     });
 
     scotchApp.controller('tagController', function($scope, $route, $routeParams) {
-        $scope.tag = $routeParams.tag; 
+        $scope.tag = $routeParams.tag;
         $scope.searchText = $scope.tag;
-        $scope.db = db;        
+        $scope.db = db;
     });
 
     scotchApp.controller('esinejaController', function($scope, $route, $routeParams) {
-        $scope.esineja = $routeParams.esineja; 
+        $scope.esineja = $routeParams.esineja;
         $scope.searchText = $scope.esineja;
-        $scope.db = db;        
+        $scope.db = db;
     });
 
     scotchApp.controller('CMSController', function($scope, $route, $routeParams) {
@@ -181,12 +181,12 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
         $scope.fileUrl = "http://heli.er.ee/helid/oy/"+data.file+".mp3";
         $scope.text = data.text;
         $scope.year = data.year;
-        $scope.authors = data.authors;   
-        $scope.sound = data.sound;   
-        $scope.editor = data.editor;   
-        $scope.nid = nid; 
-        
-        $scope.db = db;   
+        $scope.authors = data.authors;
+        $scope.sound = data.sound;
+        $scope.editor = data.editor;
+        $scope.nid = nid;
+
+        $scope.db = db;
 
     });
 
@@ -202,5 +202,3 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.unique']);
             }
         }
     }]);
-
-
