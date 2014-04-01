@@ -141,6 +141,12 @@ h1.related {
     color: #000;
 }
 
+.pull-right {
+  right: 342px;
+  position: absolute;
+  top: -2px;
+}
+
 body.black {
     background: #000;
     color: #fff;
