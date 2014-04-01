@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-    $('body').toggleClass('black');
+    //$('body').toggleClass('black');
 
     // Toggle day and night
     $('#switch').click(function(){
