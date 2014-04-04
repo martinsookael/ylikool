@@ -2,8 +2,14 @@
 
 $(document).ready(function() {
 
+    // create the tip for ÖÖ button
+    var whatTip = Math.floor((Math.random()*3)+1);
+    whatTip = 'images/tip'+whatTip+'.png';
+    $('#clickNight').attr('src',whatTip);
+
     // Toggle day and night
     $('#switch').click(function(){
+        $('#clickNight').remove(); // hide the tip for Öö button
         $('#switch-icon').toggleClass('fa-moon-o fa-sun-o');
         if($('#switch-icon').hasClass('fa-moon-o')) {
             $('body').removeClass('black');

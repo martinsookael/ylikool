@@ -147,6 +147,13 @@ h1.related {
   top: -2px;
 }
 
+#clickNight {
+  position: absolute;
+  left: -97px;
+  top: 4px;
+  z-index: -1;
+}
+
 body.black {
     background: #000;
     color: #fff;
@@ -180,4 +187,11 @@ a#switch {
   #forkMe {
     display: inline;
   }
+}
+
+@media all and (max-width:800px) {
+  #clickNight {
+    display: none;
+  }
+
 }
