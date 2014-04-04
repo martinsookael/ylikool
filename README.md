@@ -22,5 +22,5 @@ Argo Roots - https://github.com/argoroots
 Martin Verrev -  https://github.com/martinve  
 Indrek Vainu - https://github.com/vainu
 
-Öö ja päeva nupud on pärit siit:
-http://design.tutsplus.com/tutorials/stylish-switch-button--vector-5298
+Kujunduselemnte on joonistanud:
+Jaanus Sakkis
