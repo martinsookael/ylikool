@@ -40,7 +40,7 @@
 
         <!--<base href="/">-->
     </head>
-    <body ng-controller="mainController">
+    <body ng-controller="mainController" ng-class="{'black' : nightMode}">
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -73,10 +73,10 @@
                     </button>
                 </a>-->
 
-                <img src="" id="clickNight" />
+                <img ng-src="images/tip{{ nightTipNr }}.png" id="clickNight" ng-if="!hideNightTip" />
 
-                <a id="switch" href="#" class="pull-right">
-                    <i id="switch-icon" class="fa fa-moon-o fa-2x"></i>
+                <a id="switch" href="" class="pull-right" ng-click="nightToggle()">
+                    <i id="switch-icon" class="fa fa-2x" ng-class="{'fa-sun-o' : nightMode, 'fa-moon-o': !nightMode}"></i>
                 </a>
                 <a id="logo" href="#">ööülikool</a>
             </div>
