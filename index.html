@@ -37,7 +37,7 @@
             <audio controls autoplay ng-src="{{ current_lecture.link }}"></audio>
         </player>
 
-        <content>
+        <content ng-style="{'margin-top': !current_lecture && '40px'}">
             <header>
                 <img id="night-tip" class="hidden-xs" ng-src="images/tip{{ nightTipNr }}.png" ng-show="!hideNightTip" />
 
