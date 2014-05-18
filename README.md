@@ -7,7 +7,7 @@ Uus leht asub praegu ajutiselt [ylikool.herokuapp.com](http://ylikool.herokuapp.
 Koodiga on panustanud:  
 [Henrik Peinar](https://github.com/hpeinar)  
 [Janar Palk](https://github.com/chanar)  
-[Argo Roots](https://github.com/argoroots)
+[Argo Roots](https://github.com/argoroots)  
 [Martin Verrev](https://github.com/martinve)  
 [Indrek Vainu](https://github.com/vainu)
 
