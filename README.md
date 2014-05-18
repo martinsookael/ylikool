@@ -2,7 +2,7 @@
 
 Kuna Ööülikooli uue kodulehe tegemine on hiiglaslik vastutus ja ettevõmine, kus kõigil on palju mõtteid ja ettepanekuid, siis on kogu uus koduleht valmistatud vabavarana. 
 
-Uus leht asub praegu ajutiselt [ylikool.herokuapp.com](http://ylikool.herokuapp.com) ja tasklist [Asanas](https://app.asana.com/-/share?s=10785425898623-noQyCHZmysFZT1WdYoohcaC9wAGJcJdreGpyVB4lHZr-1888846333398).
+Uus leht asub praegu ajutiselt [ylikool.entu.ee/static/ylikool](https://ylikool.entu.ee/static/ylikool) ja tasklist [Asanas](https://app.asana.com/-/share?s=10785425898623-noQyCHZmysFZT1WdYoohcaC9wAGJcJdreGpyVB4lHZr-1888846333398).
 
 Koodiga on panustanud:  
 [Henrik Peinar](https://github.com/hpeinar)  
