@@ -1,12 +1,8 @@
 <h3 ng-show="!lectures">Laen andmeid...</h3>
 
 <div ng-repeat="g in years">
-    <div ng-repeat="l in lectures | filter:{year: g} | filter:search | orderBy:'date':true">
-        <h3 ng-show="$first">{{ g }}</h3>
-        <p class="authors">
-            <a href="#{{ l.id }}">
-                {{ l.title }} <span ng-show="l.authors">- <span ng-repeat="a in l.authors">{{ a }}{{ $last ? '' : ', ' }}</span><br>
-            </a>
-        </p>
-    </div>
+    <h3 ng-repeat-start="l in lectures | filter:{year: g} | filter:search | orderBy:'date':true" ng-if="$first">{{ g }}</h3>
+    <a ng-repeat-end href="#{{ l.id }}">
+        {{ l.title }} <span ng-show="l.authors">- <span ng-repeat="a in l.authors">{{ a }}{{ $last ? '' : ', ' }}</span><br>
+    </a>
 </div>

@@ -49,6 +49,10 @@ content {
         color: @blue !important;
         outline: none !important;
     }
+}
+
+header {
+    font-size: 14px;
 
     h1, h1 a, h1 a:hover {
         margin: 0px 0px 40px 0px;
@@ -60,6 +64,62 @@ content {
         text-decoration: none;
     }
 
+    #night-tip {
+        position: absolute;
+        margin: 5px 0px 0px -160px;
+        float: left;
+        z-index: -1000;
+    }
+
+    #night-switch {
+        font-size: 30px;
+        color: @gray;
+        cursor: pointer;
+    }
+
+    .nav {
+        margin: 40px 0px;
+
+        a, a:hover {
+            background: none !important;
+            border: none !important;
+            border-radius: 0px !important;
+            border-bottom: solid 1px @gray !important;
+
+            &:hover {
+                border-bottom: solid 1px @blue !important;
+            }
+        }
+
+        .active a, .active a:hover {
+            padding-bottom: 8px !important;
+            border-bottom: solid 3px @blue !important;
+            font-weight: 600;
+        }
+    }
+
+    .input-group {
+        span {
+            padding-right: 0px;
+            background: none;
+            color: @gray;
+            border-right: none;
+        }
+
+        input {
+            border-color: @gray !important;
+            border-left: none !important;
+            box-shadow: none !important;
+            overflow: hidden !important;
+            outline: none !important;
+            -webkit-appearance: none !important;
+        }
+    }
+}
+
+view {
+    font-size: 16px;
+
     h3 {
         margin: 40px 0px 0px 0px;
         font-family: 'Open Sans', sans-serif;
@@ -67,74 +127,23 @@ content {
         color: @gray;
     }
 
-    p {
-        font-size: 16px;
+    a {
+        display: block;
         margin: 5px 0px 0px 0px;
 
-        p span {
+        span {
             color: @gray;
         }
     }
-}
 
-.play-button {
-    margin: 40px 0px;
-    width: 100%;
-    color: @blue;
-    cursor: pointer;
-    text-align: center;
-}
-
-#night-tip {
-    position: absolute;
-    margin: 5px 0px 0px -160px;
-    float: left;
-    z-index: -1000;
-}
-
-#night-switch {
-    font-size: 30px;
-    color: @gray;
-    cursor: pointer;
-}
-
-.nav {
-    margin: 40px 0px;
-
-    a, a:hover {
-        background: none !important;
-        border: none !important;
-        border-radius: 0px !important;
-        border-bottom: solid 1px @gray !important;
-
-        &:hover {
-            border-bottom: solid 1px @blue !important;
-        }
+    .play-button {
+        margin: 40px 0px;
+        width: 100%;
+        color: @blue;
+        cursor: pointer;
+        text-align: center;
     }
 
-    .active a, .active a:hover {
-        padding-bottom: 8px !important;
-        border-bottom: solid 3px @blue !important;
-        font-weight: 600;
-    }
-}
-
-.input-group {
-    span {
-        padding-right: 0px;
-        background: none;
-        color: @gray;
-        border-right: none;
-    }
-
-    input {
-        border-color: @gray !important;
-        border-left: none !important;
-        box-shadow: none !important;
-        overflow: hidden !important;
-        outline: none !important;
-        -webkit-appearance: none !important;
-    }
 }
 
 #fork-me {
