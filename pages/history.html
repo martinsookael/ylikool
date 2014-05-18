@@ -1,0 +1,12 @@
+<h3 ng-show="!lectures">Laen andmeid...</h3>
+
+<div ng-repeat="g in years">
+    <div ng-repeat="l in lectures | filter:{year: g} | filter:search | orderBy:'date':true">
+        <h3 ng-show="$first">{{ g }}</h3>
+        <p class="authors">
+            <a href="#{{ l.id }}">
+                {{ l.title }} <span ng-show="l.authors">- <span ng-repeat="a in l.authors">{{ a }}{{ $last ? '' : ', ' }}</span><br>
+            </a>
+        </p>
+    </div>
+</div>

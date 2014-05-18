@@ -1,0 +1,6 @@
+<h3>{{ lecture.title }}</h3>
+
+
+<i class="fa fa-play fa-2x pull-center play-button" ng-click="palyAudio(lecture)" ng-show="lecture && lecture.link != current_lecture.link"></i>
+<i class="fa fa-stop fa-2x pull-center play-button" ng-click="palyAudio(false)" ng-show="lecture && lecture.link == current_lecture.link"></i>
+
