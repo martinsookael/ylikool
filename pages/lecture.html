@@ -8,6 +8,12 @@
     {{ lecture.description }}
 </p-->
 
+<p ng-if="lecture.subject">
+    <span ng-if="lecture.subject.length <= 1">Teema:</span>
+    <span ng-if="lecture.subject.length  > 1">Teemad:</span>
+    <span ng-repeat="u in lecture.subject">{{ u }}{{ $last ? '' : ', ' }}</span>
+</p>
+
 <p ng-if="lecture.author">
     <span ng-if="lecture.author.length <= 1">Ettekandja:</span>
     <span ng-if="lecture.author.length  > 1">Ettekandjad:</span>

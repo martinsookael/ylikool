@@ -14,6 +14,9 @@ function toLecture(data) {
     try        { var title = data.properties.nimi.values[0].value; }
     catch(err) { var title = ''; }
 
+    try        { var subject = data.properties.teema.values; }
+    catch(err) { var subject = []; }
+
     try        { var author = data.properties.esitaja.values; }
     catch(err) { var author = []; }
 
@@ -31,6 +34,9 @@ function toLecture(data) {
 
     try        { var link = data.properties.link.values[0].value; }
     catch(err) { var link = ''; }
+
+    var item_subject = [];
+    for(u in subject) { item_subject.push(subject[u].value); }
 
     var item_author = [];
     for(a in author) { item_author.push(author[a].value); }
@@ -53,6 +59,7 @@ function toLecture(data) {
         date        : date,
         year        : date.substring(0, 4),
         title       : title,
+        subject     : item_subject.sort(),
         author      : item_author.sort(),
         editor      : item_editor.sort(),
         music       : item_music.sort(),
@@ -75,6 +82,10 @@ angular.module('ylikoolApp', ['ngRoute'])
                 templateUrl : 'pages/authors.html',
                 controller  : 'listCtrl'
             })
+            .when('/teemad', {
+                templateUrl : 'pages/subjects.html',
+                controller  : 'listCtrl'
+            })
             .when('/:id', {
                 templateUrl : 'pages/lecture.html',
                 controller  : 'lectureCtrl'
@@ -93,7 +104,7 @@ angular.module('ylikoolApp', ['ngRoute'])
         $scope.pages = [
             {url: 'ajatelg',   title: 'Ajatelg'},
             {url: 'konelejad', title: 'Kõnelejad'},
-            // {url: 'teemad',    title: 'Teemad'},
+            {url: 'teemad',    title: 'Teemad'},
         ];
 
         $scope.nightToggle = function () {
@@ -109,6 +120,7 @@ angular.module('ylikoolApp', ['ngRoute'])
             $scope.lectures = $rootScope.lectures;
             $scope.years    = $rootScope.years;
             $scope.authors  = $rootScope.authors;
+            $scope.subjects = $rootScope.subjects;
         } else {
             $http({method: 'GET', url: entuURL+'entity', params: {definition: 'loeng'}}).success(function(data) {
                 $rootScope.lectures_count  = data.result.length;
@@ -116,6 +128,7 @@ angular.module('ylikoolApp', ['ngRoute'])
                 $rootScope.lectures        = [];
                 $rootScope.years           = [];
                 $rootScope.authors         = [];
+                $rootScope.subjects        = [];
 
                 for(i in data.result) {
                     $http({method: 'GET', url: entuURL+'entity-'+data.result[i].id}).success(function(data) {
@@ -136,9 +149,17 @@ angular.module('ylikoolApp', ['ngRoute'])
                             }
                         }
 
+                        for(s in lecture.subject) {
+                            if($rootScope.subjects.indexOf(lecture.subject[s]) == -1) {
+                                $rootScope.subjects.push(lecture.subject[s]);
+                                $rootScope.subjects = $rootScope.subjects.sort();
+                            }
+                        }
+
                         $scope.lectures = $rootScope.lectures;
                         $scope.years    = $rootScope.years;
                         $scope.authors  = $rootScope.authors;
+                        $scope.subjects = $rootScope.subjects;
 
                         $rootScope.lectures_loaded += 1;
                     });
