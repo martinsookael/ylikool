@@ -32,6 +32,10 @@
     </head>
     <body ng-controller="mainCtrl" ng-class="{ 'night' : nightMode }">
 
+        <div class="progress" ng-if="lectures_loaded != lectures_count">
+            <div class="progress-bar" role="progressbar" ng-style="{width: (lectures_loaded * 100 / lectures_count)+'%'}"></div>
+        </div>
+
         <player ng-if="current_lecture">
             <a href="#{{ current_lecture.id }}">{{ current_lecture.title }}</a>
             <audio controls autoplay ng-src="{{ current_lecture.link }}"></audio>

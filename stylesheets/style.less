@@ -40,6 +40,21 @@ player {
     }
 }
 
+.progress {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin: 0px;
+    height: 3px;
+    border-radius: 0px;
+    box-shadow: none;
+    background: none;
+
+    .progress-bar {
+        background: @blue;
+    }
+}
+
 content {
     margin: 120px auto 20px auto;
     padding: 0px 20px;
@@ -106,6 +121,7 @@ header {
             background: none;
             color: @gray;
             border-right: none;
+            border-color: @gray !important;
         }
 
         input {
@@ -117,6 +133,7 @@ header {
             -webkit-appearance: none !important;
         }
     }
+
 }
 
 view {
