@@ -1,0 +1,46 @@
+<h3>{{ lecture.title }}</h3>
+
+<p ng-if="lecture.date">
+    {{ lecture.date | date: 'dd.MM.yyyy' }}
+</p>
+
+<!--p ng-if="lecture.description">
+    {{ lecture.description }}
+</p-->
+
+<p ng-if="lecture.subject">
+    <span ng-if="lecture.subject.length <= 1">Teema:</span>
+    <span ng-if="lecture.subject.length  > 1">Teemad:</span>
+    <span ng-repeat="u in lecture.subject">{{ u }}{{ $last ? '' : ', ' }}</span>
+</p>
+
+<p ng-if="lecture.author">
+    <span ng-if="lecture.author.length <= 1">Ettekandja:</span>
+    <span ng-if="lecture.author.length  > 1">Ettekandjad:</span>
+    <span ng-repeat="a in lecture.author">{{ a }}{{ $last ? '' : ', ' }}</span>
+</p>
+
+<p ng-if="lecture.editor">
+    <span ng-if="lecture.editor.length <= 1">Toimetaja:</span>
+    <span ng-if="lecture.editor.length  > 1">Toimetajad:</span>
+    <span ng-repeat="e in lecture.editor">{{ e }}{{ $last ? '' : ', ' }}</span>
+</p>
+
+<p ng-if="lecture.music">
+    <span>Muusika:</span>
+    <span ng-repeat="m in lecture.music">{{ m }}{{ $last ? '' : ', ' }}</span>
+</p>
+
+<p ng-if="lecture.sound">
+    <span>Heli:</span>
+    <span ng-repeat="s in lecture.sound">{{ s }}{{ $last ? '' : ', ' }}</span>
+</p>
+
+<p ng-if="lecture.other">
+    <span>Teised:</span>
+    <span ng-repeat="o in lecture.other">{{ o }}{{ $last ? '' : ', ' }}</span>
+</p>
+
+<i class="fa fa-play fa-2x pull-center play-button" ng-click="palyAudio(lecture)" ng-show="lecture && lecture.link != current_lecture.link"></i>
+<i class="fa fa-stop fa-2x pull-center play-button" ng-click="palyAudio(false)" ng-show="lecture && lecture.link == current_lecture.link"></i>
+

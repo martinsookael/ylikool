@@ -1,0 +1,8 @@
+<h3 ng-if="!lectures">Laen andmeid...</h3>
+
+<div ng-repeat="g in authors">
+    <h3 ng-repeat-start="l in lectures | filter:{author: g} | filter:search | orderBy:'title'" ng-if="$first">{{ g }}</h3>
+    <a ng-repeat-end href="#{{l.id}}">
+        {{ l.title }} <span ng-if="l.year">- {{ l.year }}</span><br>
+    </a>
+</div>
