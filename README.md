@@ -2,7 +2,7 @@
 
 Kuna Ööülikooli uue kodulehe tegemine on hiiglaslik vastutus ja ettevõmine, kus kõigil on palju mõtteid ja ettepanekuid, siis on kogu uus koduleht valmistatud vabavarana.
 
-Uus leht asub praegu ajutiselt [argo.roots.ee/ylikool](http://argo.roots.ee/ylikool) ja tasklist [Asanas](https://app.asana.com/-/share?s=10785425898623-noQyCHZmysFZT1WdYoohcaC9wAGJcJdreGpyVB4lHZr-1888846333398).
+Uus leht asub praegu ajutiselt [martinsookael.github.io/ylikool](http://martinsookael.github.io/ylikool) ja tasklist [Asanas](https://app.asana.com/-/share?s=10785425898623-noQyCHZmysFZT1WdYoohcaC9wAGJcJdreGpyVB4lHZr-1888846333398).
 
 Koodiga on panustanud:  
 [Argo Roots](https://github.com/argoroots)  
